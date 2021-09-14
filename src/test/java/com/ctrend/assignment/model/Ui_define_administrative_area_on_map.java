@@ -27,6 +27,8 @@ public class Ui_define_administrative_area_on_map implements java.io.Serializabl
     @Column
     private String  submit_button ;
     @Column
+    private String xpath;
+    @Column
     private String  test_type;
     @Column
     private String  expected_output;
@@ -93,6 +95,14 @@ public class Ui_define_administrative_area_on_map implements java.io.Serializabl
 
     public void setSearch_text(String search_text) {
         this.search_text = search_text;
+    }
+
+    public String getXpath() {
+        return xpath;
+    }
+
+    public void setXpath(String xpath) {
+        this.xpath = xpath;
     }
 
     public String getSubmit_button() {

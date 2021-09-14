@@ -45,14 +45,33 @@ public class D_AD_area_on_map_test extends Ui {
 //        loginWithUser();
         openURL("http://cloud.ctrends-software.com:9016/?desturl=/geographic_polygon/define_region_on_map");
         D_AD_area_on_map dAdAreaOnMap = new D_AD_area_on_map();
+
+
         clickByXpath(dAdAreaOnMap.getRegion_type_click());
+        Thread.sleep(1000);
         clickByXpath(dAdAreaOnMap.getRegion_type_option_click());
+        Thread.sleep(1000);
+
         clickByXpath(dAdAreaOnMap.getRegion_level_click());
+        Thread.sleep(1000);
+
         clickByXpath(dAdAreaOnMap.getRegion_level_option_click());
+        Thread.sleep(1000);
+
         clickByXpath(dAdAreaOnMap.getSelected_region_click());
+        Thread.sleep(1000);
+
         clickByXpath(dAdAreaOnMap.getSelected_country_click());
+        Thread.sleep(1000);
+
         clickByXpath(dAdAreaOnMap.getRegion_country_option_click());
+        Thread.sleep(1000);
+
         enterTextBy(dAdAreaOnMap.getPlaceHolder_pass_text(), "Dema");
+        Thread.sleep(1000);
         clickByXpath(dAdAreaOnMap.getSearch_btn_click());
+
+
+
     }
 }
