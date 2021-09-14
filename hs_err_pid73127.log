@@ -1,0 +1,974 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00007ff7b5816b2c, pid=73127, tid=0x00007ff790e64700
+#
+# JRE version: OpenJDK Runtime Environment (8.0_302-b08) (build 1.8.0_302-b08)
+# Java VM: OpenJDK 64-Bit Server VM (25.302-b08 mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# V  [libjvm.so+0x81eb2c]  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)+0xdc
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/corretto/corretto-8/issues/
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007ff7b021f800):  JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=73147, stack(0x00007ff790d65000,0x00007ff790e65000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 128 (SI_KERNEL), si_addr: 0x0000000000000000
+
+Registers:
+RAX=0x00807ff7b1928de0, RBX=0x00007ff76926b510, RCX=0x0000000000000002, RDX=0x0000000000000002
+RSP=0x00007ff790e606b0, RBP=0x00007ff790e60750, RSI=0x000000000000000c, RDI=0x00007ff790e606e0
+R8 =0x0000000000000000, R9 =0x0000000000000008, R10=0x00007ff7b1bb4a40, R11=0x00007ff7b1bb3330
+R12=0x0000000000000001, R13=0x00007ff76cdf6b30, R14=0x00007ff790e60950, R15=0x00007ff76921e3d0
+RIP=0x00007ff7b5816b2c, EFLAGS=0x0000000000010246, CSGSFS=0x002b000000000033, ERR=0x0000000000000000
+  TRAPNO=0x000000000000000d
+
+Top of Stack: (sp=0x00007ff790e606b0)
+0x00007ff790e606b0:   00007ff790e60800 0000000000000000
+0x00007ff790e606c0:   00007ff7b1bb4a40 0000000000000010
+0x00007ff790e606d0:   0000200090e60750 00007ff790e606e0
+0x00007ff790e606e0:   0000000300000001 00007ff700000001
+0x00007ff790e606f0:   00007ff7b1647ba0 0000000000000001
+0x00007ff790e60700:   00007ff7b1b6a9a0 00007ff700000044
+0x00007ff790e60710:   00007ff7b1b6a900 00007ff790e62f00
+0x00007ff790e60720:   00007ff790e60750 0000000000000000
+0x00007ff790e60730:   0000000000000000 fffffffffffffff8
+0x00007ff790e60740:   00007ff790e60950 0000000000000010
+0x00007ff790e60750:   00007ff790e60850 00007ff7b5817370
+0x00007ff790e60760:   0000000000350df8 00007ff76cd887a8
+0x00007ff790e60770:   00007ff76cd80810 00007ff7b0026c70
+0x00007ff790e60780:   00007ff76cd807c0 00007ff7b5ffbb28
+0x00007ff790e60790:   00007ff7680e4540 0000000000000008
+0x00007ff790e607a0:   00007ff7b5ffbb28 00007ff7b1bb35e0
+0x00007ff790e607b0:   00007ff7b1bb3330 0000000000003950
+0x00007ff790e607c0:   00007ff700100000 0000000000000018
+0x00007ff790e607d0:   00007ff7b1b6a900 00007ff790e60800
+0x00007ff790e607e0:   0000000000000004 00007ff7b1bb4a40
+0x00007ff790e607f0:   00007ff7b1bb3330 00007ff700000002
+0x00007ff790e60800:   00007ff7b5fe5980 00007ff7b0026c70
+0x00007ff790e60810:   00007ff700000010 00007ff76cdf3570
+0x00007ff790e60820:   00007ff790e60850 00007ff790e60b50
+0x00007ff790e60830:   00007ff790e608e0 00007ff790e60950
+0x00007ff790e60840:   00007ff7b5fea6f8 00007ff790e609b0
+0x00007ff790e60850:   00007ff790e60aa0 00007ff7b53dd48d
+0x00007ff790e60860:   0000000000000001 000000780000007c
+0x00007ff790e60870:   00007ff790e60910 00007ff790e608b0
+0x00007ff790e60880:   00007ff790e608e0 00007ff76c1f5fd0
+0x00007ff790e60890:   00007ff76c1f5fe0 00007ff76c1f63b8
+0x00007ff790e608a0:   00000000000003d8 00007ff790e60930 
+
+Instructions: (pc=0x00007ff7b5816b2c)
+0x00007ff7b5816b0c:   50 bf 38 00 89 4d 94 0f b6 0c 30 01 d1 85 c9 0f
+0x00007ff7b5816b1c:   84 aa 00 00 00 49 8b 47 08 41 89 c8 41 c1 e8 08
+0x00007ff7b5816b2c:   4a 8b 04 c0 48 3b 05 11 03 7d 00 0f 84 d3 00 00
+0x00007ff7b5816b3c:   00 89 ca 45 89 e1 c1 ea 05 41 d3 e1 83 e2 07 44 
+
+Register to memory mapping:
+
+RAX=0x00807ff7b1928de0 is an unknown value
+RBX=0x00007ff76926b510 is an unknown value
+RCX=0x0000000000000002 is an unknown value
+RDX=0x0000000000000002 is an unknown value
+RSP=0x00007ff790e606b0 is pointing into the stack for thread: 0x00007ff7b021f800
+RBP=0x00007ff790e60750 is pointing into the stack for thread: 0x00007ff7b021f800
+RSI=0x000000000000000c is an unknown value
+RDI=0x00007ff790e606e0 is pointing into the stack for thread: 0x00007ff7b021f800
+R8 =0x0000000000000000 is an unknown value
+R9 =0x0000000000000008 is an unknown value
+R10=0x00007ff7b1bb4a40 is an unknown value
+R11=0x00007ff7b1bb3330 is an unknown value
+R12=0x0000000000000001 is an unknown value
+R13=0x00007ff76cdf6b30 is an unknown value
+R14=0x00007ff790e60950 is pointing into the stack for thread: 0x00007ff7b021f800
+R15=0x00007ff76921e3d0 is an unknown value
+
+
+Stack: [0x00007ff790d65000,0x00007ff790e65000],  sp=0x00007ff790e606b0,  free space=1005k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x81eb2c]  PhaseLive::add_liveout(Block*, IndexSet*, VectorSet&)+0xdc
+V  [libjvm.so+0x81f370]  PhaseLive::compute(unsigned int)+0x600
+V  [libjvm.so+0x3e548d]  PhaseChaitin::Register_Allocate()+0x5ad
+V  [libjvm.so+0x47d8c8]  Compile::Code_Gen()+0x198
+V  [libjvm.so+0x47f0e9]  Compile::Compile(ciEnv*, C2Compiler*, ciMethod*, int, bool, bool, bool)+0xd99
+V  [libjvm.so+0x3c76d3]  C2Compiler::compile_method(ciEnv*, ciMethod*, int)+0xa3
+V  [libjvm.so+0x48a790]  CompileBroker::invoke_compiler_on_method(CompileTask*)+0x730
+V  [libjvm.so+0x48cf78]  CompileBroker::compiler_thread_loop()+0x6d8
+V  [libjvm.so+0xaccb9b]  JavaThread::thread_main_inner()+0xdb
+V  [libjvm.so+0xacce69]  JavaThread::run()+0x299
+V  [libjvm.so+0x95bcd2]  java_start(Thread*)+0x102
+C  [libpthread.so.0+0x9609]  start_thread+0xd9
+
+
+Current CompileTask:
+C2:   4153 1846   !   4       java.net.URLClassLoader$1::run (63 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007ff7b1539000 JavaThread "Hibernate Connection Pool Validation Thread" daemon [_thread_blocked, id=73290, stack(0x00007ff71ad0e000,0x00007ff71ae0f000)]
+  0x00007ff7b0b0c800 JavaThread "AsyncHttpClient-1-4" daemon [_thread_in_native, id=73276, stack(0x00007ff754ae9000,0x00007ff754bea000)]
+  0x00007ff7b0bf5000 JavaThread "AsyncHttpClient-1-3" daemon [_thread_in_native, id=73275, stack(0x00007ff755beb000,0x00007ff755cec000)]
+  0x00007ff7b0e5d800 JavaThread "AsyncHttpClient-1-2" daemon [_thread_in_native, id=73175, stack(0x00007ff756eed000,0x00007ff756fee000)]
+  0x00007ff734016800 JavaThread "Keep-Alive-Timer" daemon [_thread_blocked, id=73174, stack(0x00007ff7573f8000,0x00007ff7574f9000)]
+  0x00007ff74800a000 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=73173, stack(0x00007ff7574f9000,0x00007ff7575fa000)]
+  0x00007ff748009800 JavaThread "Exec Stream Pumper" daemon [_thread_in_native, id=73172, stack(0x00007ff7575fa000,0x00007ff7576fb000)]
+  0x00007ff748006000 JavaThread "process reaper" daemon [_thread_in_native, id=73171, stack(0x00007ff790096000,0x00007ff7900cf000)]
+  0x00007ff73c003800 JavaThread "UrlChecker-2" daemon [_thread_blocked, id=73166, stack(0x00007ff7576fb000,0x00007ff7577fc000)]
+  0x00007ff7b0da0000 JavaThread "Driver Service Executor" daemon [_thread_blocked, id=73165, stack(0x00007ff7577fc000,0x00007ff7578fd000)]
+  0x00007ff7b0d9c000 JavaThread "Driver Service Executor" daemon [_thread_blocked, id=73163, stack(0x00007ff7578fd000,0x00007ff7579fe000)]
+  0x00007ff7b0d9b000 JavaThread "Exec Default Executor" daemon [_thread_blocked, id=73162, stack(0x00007ff7579fe000,0x00007ff757aff000)]
+  0x00007ff7b0d16000 JavaThread "netty-client-timer-3-1" daemon [_thread_blocked, id=73160, stack(0x00007ff757cff000,0x00007ff757e00000)]
+  0x00007ff770001000 JavaThread "Attach Listener" daemon [_thread_blocked, id=73159, stack(0x00007ff7840df000,0x00007ff7841e0000)]
+  0x00007ff7b0a3b000 JavaThread "AsyncHttpClient-1-1" daemon [_thread_blocked, id=73156, stack(0x00007ff79032e000,0x00007ff79042f000)]
+  0x00007ff7b0963800 JavaThread "ForkJoinPool.commonPool-worker-1" daemon [_thread_blocked, id=73153, stack(0x00007ff79042f000,0x00007ff790530000)]
+  0x00007ff7b0226800 JavaThread "Service Thread" daemon [_thread_blocked, id=73150, stack(0x00007ff790a61000,0x00007ff790b62000)]
+  0x00007ff7b0223000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=73149, stack(0x00007ff790b63000,0x00007ff790c63000)]
+  0x00007ff7b0220800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=73148, stack(0x00007ff790c64000,0x00007ff790d64000)]
+=>0x00007ff7b021f800 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=73147, stack(0x00007ff790d65000,0x00007ff790e65000)]
+  0x00007ff7b01e6800 JavaThread "Monitor Ctrl-Break" daemon [_thread_in_native, id=73146, stack(0x00007ff790e65000,0x00007ff790f66000)]
+  0x00007ff7b018b800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=73145, stack(0x00007ff791428000,0x00007ff791529000)]
+  0x00007ff7b0158000 JavaThread "Finalizer" daemon [_thread_blocked, id=73141, stack(0x00007ff791aee000,0x00007ff791bef000)]
+  0x00007ff7b0153800 JavaThread "Reference Handler" daemon [_thread_blocked, id=73137, stack(0x00007ff791bef000,0x00007ff791cf0000)]
+  0x00007ff7b0013800 JavaThread "main" [_thread_in_vm, id=73128, stack(0x00007ff7b4da9000,0x00007ff7b4ea9000)]
+
+Other Threads:
+  0x00007ff7b014a000 VMThread [stack: 0x00007ff791cf1000,0x00007ff791df1000] [id=73136]
+  0x00007ff7b0229800 WatcherThread [stack: 0x00007ff790961000,0x00007ff790a61000] [id=73151]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x00000006c7c00000, size: 3972 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 267776K, used 26899K [0x000000076d400000, 0x000000077f500000, 0x00000007c0000000)
+  eden space 243712K, 11% used [0x000000076d400000,0x000000076ee44d70,0x000000077c200000)
+  from space 24064K, 0% used [0x000000077dd80000,0x000000077dd80000,0x000000077f500000)
+  to   space 26112K, 0% used [0x000000077c200000,0x000000077c200000,0x000000077db80000)
+ ParOldGen       total 130560K, used 27624K [0x00000006c7c00000, 0x00000006cfb80000, 0x000000076d400000)
+  object space 130560K, 21% used [0x00000006c7c00000,0x00000006c96fa240,0x00000006cfb80000)
+ Metaspace       used 35889K, capacity 37044K, committed 37248K, reserved 1081344K
+  class space    used 4931K, capacity 5227K, committed 5248K, reserved 1048576K
+
+Card table byte_map: [0x00007ff7a083d000,0x00007ff7a1000000] byte_map_base: 0x00007ff79d1ff000
+
+Marking Bits: (ParMarkBitMap*) 0x00007ff7b6026700
+ Begin Bits: [0x00007ff7843e0000, 0x00007ff7881f0000)
+ End Bits:   [0x00007ff7881f0000, 0x00007ff78c000000)
+
+Polling page: 0x00007ff7b64bb000
+
+CodeCache: size=245760Kb used=6465Kb max_used=6472Kb free=239294Kb
+ bounds [0x00007ff7a1000000, 0x00007ff7a1660000, 0x00007ff7b0000000]
+ total_blobs=2468 nmethods=1952 adapters=429
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 4.116 Thread 0x00007ff7b0223000 nmethod 1949 0x00007ff7a16506d0 code [0x00007ff7a16508e0, 0x00007ff7a1651658]
+Event: 4.116 Thread 0x00007ff7b0223000 1950       3       java.lang.Class::isAnnotation (17 bytes)
+Event: 4.116 Thread 0x00007ff7b0223000 nmethod 1950 0x00007ff7a1651b50 code [0x00007ff7a1651cc0, 0x00007ff7a1651f28]
+Event: 4.117 Thread 0x00007ff7b0223000 1951       3       java.lang.String::valueOf (14 bytes)
+Event: 4.117 Thread 0x00007ff7b0223000 nmethod 1951 0x00007ff7a1654e90 code [0x00007ff7a1655000, 0x00007ff7a1655248]
+Event: 4.117 Thread 0x00007ff7b0223000 1952       3       java.lang.StringBuilder::append (9 bytes)
+Event: 4.117 Thread 0x00007ff7b0220800 nmethod 1948 0x00007ff7a1655310 code [0x00007ff7a1655480, 0x00007ff7a1655728]
+Event: 4.118 Thread 0x00007ff7b0223000 nmethod 1952 0x00007ff7a1654790 code [0x00007ff7a1654920, 0x00007ff7a1654d18]
+Event: 4.130 Thread 0x00007ff7b0223000 1953       1       org.hibernate.service.spi.ServiceBinding::getService (5 bytes)
+Event: 4.130 Thread 0x00007ff7b0223000 nmethod 1953 0x00007ff7a1654010 code [0x00007ff7a1654160, 0x00007ff7a1654270]
+
+GC Heap History (10 events):
+Event: 2.941 GC heap before
+{Heap before GC invocations=4 (full 0):
+ PSYoungGen      total 74752K, used 26878K [0x000000076d400000, 0x0000000776600000, 0x00000007c0000000)
+  eden space 64512K, 29% used [0x000000076d400000,0x000000076e68cf80,0x0000000771300000)
+  from space 10240K, 76% used [0x0000000771300000,0x0000000771ab28a8,0x0000000771d00000)
+  to   space 10240K, 0% used [0x0000000775c00000,0x0000000775c00000,0x0000000776600000)
+ ParOldGen       total 171008K, used 16555K [0x00000006c7c00000, 0x00000006d2300000, 0x000000076d400000)
+  object space 171008K, 9% used [0x00000006c7c00000,0x00000006c8c2ac70,0x00000006d2300000)
+ Metaspace       used 20345K, capacity 21232K, committed 21296K, reserved 1067008K
+  class space    used 2655K, capacity 2896K, committed 2944K, reserved 1048576K
+Event: 2.948 GC heap after
+Heap after GC invocations=4 (full 0):
+ PSYoungGen      total 139264K, used 7455K [0x000000076d400000, 0x0000000776600000, 0x00000007c0000000)
+  eden space 129024K, 0% used [0x000000076d400000,0x000000076d400000,0x0000000775200000)
+  from space 10240K, 72% used [0x0000000775c00000,0x0000000776347ea8,0x0000000776600000)
+  to   space 10240K, 0% used [0x0000000775200000,0x0000000775200000,0x0000000775c00000)
+ ParOldGen       total 171008K, used 16563K [0x00000006c7c00000, 0x00000006d2300000, 0x000000076d400000)
+  object space 171008K, 9% used [0x00000006c7c00000,0x00000006c8c2cc70,0x00000006d2300000)
+ Metaspace       used 20345K, capacity 21232K, committed 21296K, reserved 1067008K
+  class space    used 2655K, capacity 2896K, committed 2944K, reserved 1048576K
+}
+Event: 2.948 GC heap before
+{Heap before GC invocations=5 (full 1):
+ PSYoungGen      total 139264K, used 7455K [0x000000076d400000, 0x0000000776600000, 0x00000007c0000000)
+  eden space 129024K, 0% used [0x000000076d400000,0x000000076d400000,0x0000000775200000)
+  from space 10240K, 72% used [0x0000000775c00000,0x0000000776347ea8,0x0000000776600000)
+  to   space 10240K, 0% used [0x0000000775200000,0x0000000775200000,0x0000000775c00000)
+ ParOldGen       total 171008K, used 16563K [0x00000006c7c00000, 0x00000006d2300000, 0x000000076d400000)
+  object space 171008K, 9% used [0x00000006c7c00000,0x00000006c8c2cc70,0x00000006d2300000)
+ Metaspace       used 20345K, capacity 21232K, committed 21296K, reserved 1067008K
+  class space    used 2655K, capacity 2896K, committed 2944K, reserved 1048576K
+Event: 2.980 GC heap after
+Heap after GC invocations=5 (full 1):
+ PSYoungGen      total 139264K, used 0K [0x000000076d400000, 0x0000000776600000, 0x00000007c0000000)
+  eden space 129024K, 0% used [0x000000076d400000,0x000000076d400000,0x0000000775200000)
+  from space 10240K, 0% used [0x0000000775c00000,0x0000000775c00000,0x0000000776600000)
+  to   space 10240K, 0% used [0x0000000775200000,0x0000000775200000,0x0000000775c00000)
+ ParOldGen       total 111104K, used 23738K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 21% used [0x00000006c7c00000,0x00000006c932e938,0x00000006ce880000)
+ Metaspace       used 20345K, capacity 21232K, committed 21296K, reserved 1067008K
+  class space    used 2655K, capacity 2896K, committed 2944K, reserved 1048576K
+}
+Event: 3.799 GC heap before
+{Heap before GC invocations=6 (full 1):
+ PSYoungGen      total 139264K, used 129024K [0x000000076d400000, 0x0000000776600000, 0x00000007c0000000)
+  eden space 129024K, 100% used [0x000000076d400000,0x0000000775200000,0x0000000775200000)
+  from space 10240K, 0% used [0x0000000775c00000,0x0000000775c00000,0x0000000776600000)
+  to   space 10240K, 0% used [0x0000000775200000,0x0000000775200000,0x0000000775c00000)
+ ParOldGen       total 111104K, used 23738K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 21% used [0x00000006c7c00000,0x00000006c932e938,0x00000006ce880000)
+ Metaspace       used 32366K, capacity 33400K, committed 33664K, reserved 1079296K
+  class space    used 4447K, capacity 4701K, committed 4736K, reserved 1048576K
+Event: 3.816 GC heap after
+Heap after GC invocations=6 (full 1):
+ PSYoungGen      total 139264K, used 9414K [0x000000076d400000, 0x000000077f700000, 0x00000007c0000000)
+  eden space 129024K, 0% used [0x000000076d400000,0x000000076d400000,0x0000000775200000)
+  from space 10240K, 91% used [0x0000000775200000,0x0000000775b31be0,0x0000000775c00000)
+  to   space 26112K, 0% used [0x000000077dd80000,0x000000077dd80000,0x000000077f700000)
+ ParOldGen       total 111104K, used 32002K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 28% used [0x00000006c7c00000,0x00000006c9b40960,0x00000006ce880000)
+ Metaspace       used 32366K, capacity 33400K, committed 33664K, reserved 1079296K
+  class space    used 4447K, capacity 4701K, committed 4736K, reserved 1048576K
+}
+Event: 3.986 GC heap before
+{Heap before GC invocations=7 (full 1):
+ PSYoungGen      total 139264K, used 37318K [0x000000076d400000, 0x000000077f700000, 0x00000007c0000000)
+  eden space 129024K, 21% used [0x000000076d400000,0x000000076ef3fc38,0x0000000775200000)
+  from space 10240K, 91% used [0x0000000775200000,0x0000000775b31be0,0x0000000775c00000)
+  to   space 26112K, 0% used [0x000000077dd80000,0x000000077dd80000,0x000000077f700000)
+ ParOldGen       total 111104K, used 32002K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 28% used [0x00000006c7c00000,0x00000006c9b40960,0x00000006ce880000)
+ Metaspace       used 34205K, capacity 35274K, committed 35456K, reserved 1079296K
+  class space    used 4722K, capacity 4990K, committed 4992K, reserved 1048576K
+Event: 3.993 GC heap after
+Heap after GC invocations=7 (full 1):
+ PSYoungGen      total 267776K, used 3996K [0x000000076d400000, 0x000000077f500000, 0x00000007c0000000)
+  eden space 243712K, 0% used [0x000000076d400000,0x000000076d400000,0x000000077c200000)
+  from space 24064K, 16% used [0x000000077dd80000,0x000000077e1671c0,0x000000077f500000)
+  to   space 26112K, 0% used [0x000000077c200000,0x000000077c200000,0x000000077db80000)
+ ParOldGen       total 111104K, used 32002K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 28% used [0x00000006c7c00000,0x00000006c9b40960,0x00000006ce880000)
+ Metaspace       used 34205K, capacity 35274K, committed 35456K, reserved 1079296K
+  class space    used 4722K, capacity 4990K, committed 4992K, reserved 1048576K
+}
+Event: 3.993 GC heap before
+{Heap before GC invocations=8 (full 2):
+ PSYoungGen      total 267776K, used 3996K [0x000000076d400000, 0x000000077f500000, 0x00000007c0000000)
+  eden space 243712K, 0% used [0x000000076d400000,0x000000076d400000,0x000000077c200000)
+  from space 24064K, 16% used [0x000000077dd80000,0x000000077e1671c0,0x000000077f500000)
+  to   space 26112K, 0% used [0x000000077c200000,0x000000077c200000,0x000000077db80000)
+ ParOldGen       total 111104K, used 32002K [0x00000006c7c00000, 0x00000006ce880000, 0x000000076d400000)
+  object space 111104K, 28% used [0x00000006c7c00000,0x00000006c9b40960,0x00000006ce880000)
+ Metaspace       used 34205K, capacity 35274K, committed 35456K, reserved 1079296K
+  class space    used 4722K, capacity 4990K, committed 4992K, reserved 1048576K
+Event: 4.036 GC heap after
+Heap after GC invocations=8 (full 2):
+ PSYoungGen      total 267776K, used 0K [0x000000076d400000, 0x000000077f500000, 0x00000007c0000000)
+  eden space 243712K, 0% used [0x000000076d400000,0x000000076d400000,0x000000077c200000)
+  from space 24064K, 0% used [0x000000077dd80000,0x000000077dd80000,0x000000077f500000)
+  to   space 26112K, 0% used [0x000000077c200000,0x000000077c200000,0x000000077db80000)
+ ParOldGen       total 130560K, used 27624K [0x00000006c7c00000, 0x00000006cfb80000, 0x000000076d400000)
+  object space 130560K, 21% used [0x00000006c7c00000,0x00000006c96fa240,0x00000006cfb80000)
+ Metaspace       used 34205K, capacity 35274K, committed 35456K, reserved 1079296K
+  class space    used 4722K, capacity 4990K, committed 4992K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 2.901 Thread 0x00007ff7b0013800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff7a13c2dc0 method=java.util.HashMap.hash(Ljava/lang/Object;)I @ 1
+Event: 3.208 Thread 0x00007ff7b0013800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff7a13ed93c method=java.net.URL.<init>(Ljava/net/URL;Ljava/lang/String;Ljava/net/URLStreamHandler;)V @ 347
+Event: 3.228 Thread 0x00007ff7b0013800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff7a151c4e8 method=java.lang.ThreadLocal$ThreadLocalMap.getEntry(Ljava/lang/ThreadLocal;)Ljava/lang/ThreadLocal$ThreadLocalMap$Entry; @ 29
+Event: 3.247 Thread 0x00007ff7b0013800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff7a152077c method=java.util.jar.JarFile.maybeInstantiateVerifier()V @ 4
+Event: 3.387 Thread 0x00007ff7b0013800 Uncommon trap: reason=predicate action=maybe_recompile pc=0x00007ff7a13a4400 method=java.lang.String.regionMatches(ZILjava/lang/String;II)Z @ 63
+Event: 3.407 Thread 0x00007ff7b0013800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007ff7a11d6d08 method=java.lang.AbstractStringBuilder.append(Ljava/lang/String;)Ljava/lang/AbstractStringBuilder; @ 1
+Event: 3.668 Thread 0x00007ff7b0013800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007ff7a1570650 method=java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; @ 70
+Event: 3.749 Thread 0x00007ff7b0013800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007ff7a1570650 method=java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; @ 70
+Event: 3.817 Thread 0x00007ff7b0013800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007ff7a1570650 method=java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; @ 70
+Event: 3.818 Thread 0x00007ff7b0013800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x00007ff7a1570650 method=java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; @ 70
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1.687 Thread 0x00007ff7b0e5d800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x000000076f7d4900) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Corretto8Src/installers/linux/universal/tar/corretto-build/buildRoot/src/hotspot/src/share/vm/runtime/s
+Event: 1.687 Thread 0x00007ff7b0e5d800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException'> (0x000000076f7d5a78) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Corretto8Src/installers/linux/universal/tar/corretto-build/buildRoot/src/hotspot/src/share/vm/runtime/s
+Event: 2.287 Thread 0x00007ff7b0013800 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$getResponseFunction$0(Lorg/openqa/selenium/remote/InitialHandshakeResponse;)Lorg/openqa/selenium/remote/ProtocolHandshake$Result;> (0x00000007711f34d8) thrown at [/home/jenkins/node/works
+Event: 2.364 Thread 0x00007ff7b0b0c800 Exception <a 'java/lang/ArrayIndexOutOfBoundsException': 167> (0x000000076d9351d8) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Corretto8Src/installers/linux/universal/tar/corretto-build/buildRoot/src/hotspot/src/share/vm/inte
+Event: 2.898 Thread 0x00007ff7b0013800 Implicit null exception at 0x00007ff7a11c14b5 to 0x00007ff7a11c16f5
+Event: 2.901 Thread 0x00007ff7b0013800 Implicit null exception at 0x00007ff7a13c27db to 0x00007ff7a13c2dad
+Event: 3.246 Thread 0x00007ff7b0013800 Exception <a 'java/lang/ClassNotFoundException': com/sun/org/glassfish/hk2/osgiresourcelocator/ServiceLoader> (0x000000077044a718) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Corretto8Src/installers/linux/universal/tar/corret
+Event: 3.281 Thread 0x00007ff7b0013800 Exception <a 'java/lang/NullPointerException'> (0x00000007709cca88) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Corretto8Src/installers/linux/universal/tar/corretto-build/buildRoot/src/hotspot/src/share/vm/interpreter/linkRes
+Event: 3.407 Thread 0x00007ff7b0013800 Implicit null exception at 0x00007ff7a11d6935 to 0x00007ff7a11d6cf5
+Event: 4.078 Thread 0x00007ff7b0013800 Exception <a 'java/lang/NoSuchMethodError': java.lang.Object.lambda$comparing$77a9974f$1(Ljava/util/function/Function;Ljava/lang/Object;Ljava/lang/Object;)I> (0x000000076db6d850) thrown at [/home/jenkins/node/workspace/Corretto8/generic_linux/x64/build/Co
+
+Events (10 events):
+Event: 4.148 loading class org/hibernate/query/criteria/JpaPath
+Event: 4.148 loading class org/hibernate/query/criteria/JpaPath done
+Event: 4.148 loading class org/hibernate/query/criteria/JpaJoin
+Event: 4.148 loading class org/hibernate/query/criteria/JpaJoin done
+Event: 4.148 loading class org/hibernate/query/criteria/JpaJoinedFrom
+Event: 4.148 loading class org/hibernate/query/criteria/JpaJoinedFrom done
+Event: 4.149 loading class org/hibernate/query/criteria/JpaFrom
+Event: 4.149 loading class org/hibernate/query/criteria/JpaFrom done
+Event: 4.149 loading class org/hibernate/query/criteria/JpaFetchParent
+Event: 4.149 loading class org/hibernate/query/criteria/JpaFetchParent done
+
+
+Dynamic libraries:
+6c7c00000-6cfb80000 rw-p 00000000 00:00 0 
+6cfb80000-76d400000 ---p 00000000 00:00 0 
+76d400000-77f500000 rw-p 00000000 00:00 0 
+77f500000-7c0000000 ---p 00000000 00:00 0 
+7c0000000-7c0520000 rw-p 00000000 00:00 0 
+7c0520000-800000000 ---p 00000000 00:00 0 
+5569e698b000-5569e698c000 r-xp 00000000 08:16 5249235                    /home/kanon/.jdks/corretto-1.8.0_302/bin/java
+5569e6b8b000-5569e6b8c000 r--p 00000000 08:16 5249235                    /home/kanon/.jdks/corretto-1.8.0_302/bin/java
+5569e6b8c000-5569e6b8d000 rw-p 00001000 08:16 5249235                    /home/kanon/.jdks/corretto-1.8.0_302/bin/java
+5569e7897000-5569e78b8000 rw-p 00000000 00:00 0                          [heap]
+7ff714000000-7ff714021000 rw-p 00000000 00:00 0 
+7ff714021000-7ff718000000 ---p 00000000 00:00 0 
+7ff71a90e000-7ff71aa4e000 rw-p 00000000 00:00 0 
+7ff71aa4e000-7ff71ab0e000 ---p 00000000 00:00 0 
+7ff71ab0e000-7ff71ad0e000 rw-p 00000000 00:00 0 
+7ff71ad0e000-7ff71ad11000 ---p 00000000 00:00 0 
+7ff71ad11000-7ff71ae0f000 rw-p 00000000 00:00 0 
+7ff71afff000-7ff71c000000 rw-p 00000000 00:00 0 
+7ff71c000000-7ff71c021000 rw-p 00000000 00:00 0 
+7ff71c021000-7ff720000000 ---p 00000000 00:00 0 
+7ff720000000-7ff720021000 rw-p 00000000 00:00 0 
+7ff720021000-7ff724000000 ---p 00000000 00:00 0 
+7ff724000000-7ff724021000 rw-p 00000000 00:00 0 
+7ff724021000-7ff728000000 ---p 00000000 00:00 0 
+7ff728000000-7ff72804c000 rw-p 00000000 00:00 0 
+7ff72804c000-7ff72c000000 ---p 00000000 00:00 0 
+7ff72c000000-7ff72c021000 rw-p 00000000 00:00 0 
+7ff72c021000-7ff730000000 ---p 00000000 00:00 0 
+7ff730000000-7ff730021000 rw-p 00000000 00:00 0 
+7ff730021000-7ff734000000 ---p 00000000 00:00 0 
+7ff734000000-7ff734021000 rw-p 00000000 00:00 0 
+7ff734021000-7ff738000000 ---p 00000000 00:00 0 
+7ff738000000-7ff738021000 rw-p 00000000 00:00 0 
+7ff738021000-7ff73c000000 ---p 00000000 00:00 0 
+7ff73c000000-7ff73c021000 rw-p 00000000 00:00 0 
+7ff73c021000-7ff740000000 ---p 00000000 00:00 0 
+7ff740000000-7ff740021000 rw-p 00000000 00:00 0 
+7ff740021000-7ff744000000 ---p 00000000 00:00 0 
+7ff744000000-7ff744021000 rw-p 00000000 00:00 0 
+7ff744021000-7ff748000000 ---p 00000000 00:00 0 
+7ff748000000-7ff748021000 rw-p 00000000 00:00 0 
+7ff748021000-7ff74c000000 ---p 00000000 00:00 0 
+7ff74c000000-7ff74c021000 rw-p 00000000 00:00 0 
+7ff74c021000-7ff750000000 ---p 00000000 00:00 0 
+7ff750000000-7ff750021000 rw-p 00000000 00:00 0 
+7ff750021000-7ff754000000 ---p 00000000 00:00 0 
+7ff7540e9000-7ff7542e9000 rw-p 00000000 00:00 0 
+7ff7542e9000-7ff7544e9000 rw-p 00000000 00:00 0 
+7ff7544e9000-7ff7546e9000 rw-p 00000000 00:00 0 
+7ff7546e9000-7ff7548e9000 rw-p 00000000 00:00 0 
+7ff7548e9000-7ff754ae9000 rw-p 00000000 00:00 0 
+7ff754ae9000-7ff754aec000 ---p 00000000 00:00 0 
+7ff754aec000-7ff755beb000 rw-p 00000000 00:00 0 
+7ff755beb000-7ff755bee000 ---p 00000000 00:00 0 
+7ff755bee000-7ff756eed000 rw-p 00000000 00:00 0 
+7ff756eed000-7ff756ef0000 ---p 00000000 00:00 0 
+7ff756ef0000-7ff756fee000 rw-p 00000000 00:00 0 
+7ff756fee000-7ff756ff7000 r-xp 00000000 08:16 5374335                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libmanagement.so
+7ff756ff7000-7ff7571f6000 ---p 00009000 08:16 5374335                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libmanagement.so
+7ff7571f6000-7ff7571f7000 r--p 00008000 08:16 5374335                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libmanagement.so
+7ff7571f7000-7ff7571f8000 rw-p 00009000 08:16 5374335                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libmanagement.so
+7ff7571f8000-7ff7573f8000 rw-p 00000000 00:00 0 
+7ff7573f8000-7ff7573fb000 ---p 00000000 00:00 0 
+7ff7573fb000-7ff7574f9000 rw-p 00000000 00:00 0 
+7ff7574f9000-7ff7574fc000 ---p 00000000 00:00 0 
+7ff7574fc000-7ff7575fa000 rw-p 00000000 00:00 0 
+7ff7575fa000-7ff7575fd000 ---p 00000000 00:00 0 
+7ff7575fd000-7ff7576fb000 rw-p 00000000 00:00 0 
+7ff7576fb000-7ff7576fe000 ---p 00000000 00:00 0 
+7ff7576fe000-7ff7577fc000 rw-p 00000000 00:00 0 
+7ff7577fc000-7ff7577ff000 ---p 00000000 00:00 0 
+7ff7577ff000-7ff7578fd000 rw-p 00000000 00:00 0 
+7ff7578fd000-7ff757900000 ---p 00000000 00:00 0 
+7ff757900000-7ff7579fe000 rw-p 00000000 00:00 0 
+7ff7579fe000-7ff757a01000 ---p 00000000 00:00 0 
+7ff757a01000-7ff757cff000 rw-p 00000000 00:00 0 
+7ff757cff000-7ff757d02000 ---p 00000000 00:00 0 
+7ff757d02000-7ff758000000 rw-p 00000000 00:00 0 
+7ff758000000-7ff758021000 rw-p 00000000 00:00 0 
+7ff758021000-7ff75c000000 ---p 00000000 00:00 0 
+7ff75c000000-7ff75c021000 rw-p 00000000 00:00 0 
+7ff75c021000-7ff760000000 ---p 00000000 00:00 0 
+7ff760000000-7ff760649000 rw-p 00000000 00:00 0 
+7ff760649000-7ff764000000 ---p 00000000 00:00 0 
+7ff764000000-7ff764021000 rw-p 00000000 00:00 0 
+7ff764021000-7ff768000000 ---p 00000000 00:00 0 
+7ff768000000-7ff769542000 rw-p 00000000 00:00 0 
+7ff769542000-7ff76c000000 ---p 00000000 00:00 0 
+7ff76c000000-7ff76d449000 rw-p 00000000 00:00 0 
+7ff76d449000-7ff770000000 ---p 00000000 00:00 0 
+7ff770000000-7ff770021000 rw-p 00000000 00:00 0 
+7ff770021000-7ff774000000 ---p 00000000 00:00 0 
+7ff774000000-7ff774021000 rw-p 00000000 00:00 0 
+7ff774021000-7ff778000000 ---p 00000000 00:00 0 
+7ff778000000-7ff778021000 rw-p 00000000 00:00 0 
+7ff778021000-7ff77c000000 ---p 00000000 00:00 0 
+7ff77c000000-7ff77c021000 rw-p 00000000 00:00 0 
+7ff77c021000-7ff780000000 ---p 00000000 00:00 0 
+7ff780000000-7ff780021000 rw-p 00000000 00:00 0 
+7ff780021000-7ff784000000 ---p 00000000 00:00 0 
+7ff7840df000-7ff7840e2000 ---p 00000000 00:00 0 
+7ff7840e2000-7ff78c000000 rw-p 00000000 00:00 0 
+7ff78c000000-7ff78c021000 rw-p 00000000 00:00 0 
+7ff78c021000-7ff790000000 ---p 00000000 00:00 0 
+7ff790070000-7ff79007b000 r--s 00116000 08:16 5374412                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/localedata.jar
+7ff79007b000-7ff790096000 r--s 00394000 08:16 5374413                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/cldrdata.jar
+7ff790096000-7ff790099000 ---p 00000000 00:00 0 
+7ff790099000-7ff7900cf000 rw-p 00000000 00:00 0 
+7ff7900cf000-7ff7900d5000 r--s 0003d000 08:16 5374409                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/sunjce_provider.jar
+7ff7900d5000-7ff790113000 r-xp 00000000 08:16 5374320                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libsunec.so
+7ff790113000-7ff790312000 ---p 0003e000 08:16 5374320                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libsunec.so
+7ff790312000-7ff790317000 r--p 0003d000 08:16 5374320                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libsunec.so
+7ff790317000-7ff790319000 rw-p 00042000 08:16 5374320                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libsunec.so
+7ff790319000-7ff79031b000 r--s 00008000 08:16 5374408                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/sunec.jar
+7ff79031b000-7ff79031d000 r--s 00016000 08:16 5374420                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jce.jar
+7ff79031d000-7ff79032e000 r--s 001c4000 08:16 5374423                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jsse.jar
+7ff79032e000-7ff790331000 ---p 00000000 00:00 0 
+7ff790331000-7ff79042f000 rw-p 00000000 00:00 0 
+7ff79042f000-7ff790432000 ---p 00000000 00:00 0 
+7ff790432000-7ff790530000 rw-p 00000000 00:00 0 
+7ff790530000-7ff790539000 r--s 0006d000 08:16 5505382                    /home/kanon/.m2/repository/log4j/log4j/1.2.16/log4j-1.2.16.jar
+7ff790539000-7ff79053a000 r--s 00002000 08:16 5505355                    /home/kanon/.m2/repository/org/slf4j/slf4j-log4j12/1.6.6/slf4j-log4j12-1.6.6.jar
+7ff79053a000-7ff79053c000 r--s 00005000 08:16 5505372                    /home/kanon/.m2/repository/org/slf4j/slf4j-api/1.6.6/slf4j-api-1.6.6.jar
+7ff79053c000-7ff790544000 r--s 000a8000 08:16 5505338                    /home/kanon/.m2/repository/org/postgresql/postgresql/42.2.2.jre7/postgresql-42.2.2.jre7.jar
+7ff790544000-7ff790552000 r--s 0007f000 08:16 4195168                    /home/kanon/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar
+7ff790552000-7ff790557000 r--s 00068000 08:16 5505369                    /home/kanon/.m2/repository/antlr/antlr/2.7.7/antlr-2.7.7.jar
+7ff790557000-7ff79055a000 r--s 00018000 08:16 5505388                    /home/kanon/.m2/repository/org/eclipse/equinox/common/3.6.200-v20130402-1505/common-3.6.200-v20130402-1505.jar
+7ff79055a000-7ff79055d000 r--s 00013000 08:16 5505381                    /home/kanon/.m2/repository/org/eclipse/equinox/app/1.3.200-v20130910-1609/app-1.3.200-v20130910-1609.jar
+7ff79055d000-7ff79055f000 r--s 00015000 08:16 5505357                    /home/kanon/.m2/repository/org/eclipse/core/contenttype/3.4.200-v20140207-1251/contenttype-3.4.200-v20140207-1251.jar
+7ff79055f000-7ff790563000 r--s 0001c000 08:16 5505391                    /home/kanon/.m2/repository/org/eclipse/equinox/preferences/3.5.200-v20140224-1527/preferences-3.5.200-v20140224-1527.jar
+7ff790563000-7ff790567000 r--s 00029000 08:16 5505393                    /home/kanon/.m2/repository/org/eclipse/equinox/registry/3.5.400-v20140428-1507/registry-3.5.400-v20140428-1507.jar
+7ff790567000-7ff790569000 r--s 00016000 08:16 5505387                    /home/kanon/.m2/repository/org/eclipse/core/jobs/3.6.0-v20140424-0053/jobs-3.6.0-v20140424-0053.jar
+7ff790569000-7ff79057d000 r--s 00121000 08:16 5505379                    /home/kanon/.m2/repository/org/eclipse/osgi/3.10.0-v20140606-1445/osgi-3.10.0-v20140606-1445.jar
+7ff79057d000-7ff79057f000 r--s 00010000 08:16 5505386                    /home/kanon/.m2/repository/org/eclipse/core/runtime/3.9.0-v20130326-1255/runtime-3.9.0-v20130326-1255.jar
+7ff79057f000-7ff790583000 r--s 00016000 08:16 5505359                    /home/kanon/.m2/repository/org/eclipse/core/commands/3.3.0-I20070605-0010/commands-3.3.0-I20070605-0010.jar
+7ff790583000-7ff790589000 r--s 00034000 08:16 4724425                    /home/kanon/.m2/repository/org/eclipse/text/3.3.0-v20070606-0010/text-3.3.0-v20070606-0010.jar
+7ff790589000-7ff7905b3000 r--s 00476000 08:16 4464154                    /home/kanon/.m2/repository/org/eclipse/tycho/org.eclipse.jdt.core/3.9.1.v20130905-0837/org.eclipse.jdt.core-3.9.1.v20130905-0837.jar
+7ff7905b3000-7ff7905b6000 r--s 0003a000 08:16 5505375                    /home/kanon/.m2/repository/org/hibernate/jtidy/r8-20060801/jtidy-r8-20060801.jar
+7ff7905b6000-7ff7905c4000 r--s 000b6000 08:16 5505345                    /home/kanon/.m2/repository/freemarker/freemarker/2.3.8/freemarker-2.3.8.jar
+7ff7905c4000-7ff7905d3000 r--s 000ee000 08:16 5505374                    /home/kanon/.m2/repository/ant/ant/1.6.5/ant-1.6.5.jar
+7ff7905d3000-7ff7905d6000 r--s 00011000 08:16 4198000                    /home/kanon/.m2/repository/javax/servlet/servlet-api/2.3/servlet-api-2.3.jar
+7ff7905d6000-7ff7905d9000 r--s 0000d000 08:16 4198008                    /home/kanon/.m2/repository/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.jar
+7ff7905d9000-7ff7905dc000 r--s 0000f000 08:16 4197999                    /home/kanon/.m2/repository/logkit/logkit/1.0.1/logkit-1.0.1.jar
+7ff7905dc000-7ff7905dd000 r--s 0000c000 08:16 4197998                    /home/kanon/.m2/repository/commons-logging/commons-logging/1.1/commons-logging-1.1.jar
+7ff7905dd000-7ff7905e2000 r--s 00017000 08:16 5505346                    /home/kanon/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar
+7ff7905e2000-7ff7905ec000 r--s 000a5000 08:16 5505340                    /home/kanon/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar
+7ff7905ec000-7ff7905ed000 r--s 00002000 08:16 5505353                    /home/kanon/.m2/repository/org/jboss/logging/jboss-logging-annotations/1.2.0.Beta1/jboss-logging-annotations-1.2.0.Beta1.jar
+7ff7905ed000-7ff7905fb000 r--s 00091000 08:16 5505344                    /home/kanon/.m2/repository/org/hibernate/hibernate-entitymanager/4.3.11.Final/hibernate-entitymanager-4.3.11.Final.jar
+7ff7905fb000-7ff790602000 r--s 0005f000 08:16 5505364                    /home/kanon/.m2/repository/org/hibernate/hibernate-tools/4.3.2.Final/hibernate-tools-4.3.2.Final.jar
+7ff790602000-7ff790605000 r--s 0000a000 08:16 5505352                    /home/kanon/.m2/repository/org/hibernate/ejb3-persistence/1.0.2.GA/ejb3-persistence-1.0.2.GA.jar
+7ff790605000-7ff790608000 r--s 0000f000 08:16 5505354                    /home/kanon/.m2/repository/org/hibernate/hibernate-commons-annotations/3.2.0.Final/hibernate-commons-annotations-3.2.0.Final.jar
+7ff790608000-7ff79060e000 r--s 0006d000 08:16 5505339                    /home/kanon/.m2/repository/javassist/javassist/3.4.GA/javassist-3.4.GA.jar
+7ff79060e000-7ff79060f000 r--s 00003000 08:16 5505347                    /home/kanon/.m2/repository/javax/transaction/jta/1.1/jta-1.1.jar
+7ff79060f000-7ff790614000 r--s 00016000 08:16 4198004                    /home/kanon/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar
+7ff790614000-7ff790619000 r--s 00048000 08:16 4856774                    /home/kanon/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar
+7ff790619000-7ff79061c000 r--s 0001b000 08:16 5505343                    /home/kanon/.m2/repository/hibernate/hibernate-entitymanager/3.4.0.GA/hibernate-entitymanager-3.4.0.GA.jar
+7ff79061c000-7ff790621000 r--s 00014000 08:16 5505341                    /home/kanon/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.0-api/1.0.0.Final/hibernate-jpa-2.0-api-1.0.0.Final.jar
+7ff790621000-7ff790627000 r--s 00054000 08:16 5505342                    /home/kanon/.m2/repository/org/hibernate/hibernate-annotations/3.5.6-Final/hibernate-annotations-3.5.6-Final.jar
+7ff790627000-7ff790692000 r--s 00b57000 08:16 4464153                    /home/kanon/.m2/repository/com/ibm/icu/icu4j/61.1/icu4j-61.1.jar
+7ff790692000-7ff790695000 r--s 00012000 08:16 5505335                    /home/kanon/.m2/repository/org/glassfish/javax.json/1.0.4/javax.json-1.0.4.jar
+7ff790695000-7ff790697000 r--s 00005000 08:16 5378594                    /home/kanon/.m2/repository/org/abego/treelayout/org.abego.treelayout.core/1.0.3/org.abego.treelayout.core-1.0.3.jar
+7ff790697000-7ff79069b000 r--s 0003a000 08:16 5378588                    /home/kanon/.m2/repository/org/antlr/ST4/4.3/ST4-4.3.jar
+7ff79069b000-7ff79069e000 r--s 00026000 08:16 5378582                    /home/kanon/.m2/repository/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar
+7ff79069e000-7ff7906a4000 r--s 0004d000 08:16 5378600                    /home/kanon/.m2/repository/org/antlr/antlr4-runtime/4.9.1/antlr4-runtime-4.9.1.jar
+7ff7906a4000-7ff7906b0000 r--s 00121000 08:16 5378592                    /home/kanon/.m2/repository/org/antlr/antlr4/4.9.1/antlr4-4.9.1.jar
+7ff7906b0000-7ff7906b6000 r--s 00047000 08:16 5378599                    /home/kanon/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.15/FastInfoset-1.2.15.jar
+7ff7906b6000-7ff7906b7000 r--s 00008000 08:16 5378596                    /home/kanon/.m2/repository/org/jvnet/staxex/stax-ex/1.8/stax-ex-1.8.jar
+7ff7906b7000-7ff7906b9000 r--s 00005000 08:16 5378584                    /home/kanon/.m2/repository/com/sun/istack/istack-commons-runtime/3.0.7/istack-commons-runtime-3.0.7.jar
+7ff7906b9000-7ff7906bc000 r--s 0000f000 08:16 5378576                    /home/kanon/.m2/repository/org/glassfish/jaxb/txw2/2.3.1/txw2-2.3.1.jar
+7ff7906bc000-7ff7906d0000 r--s 000f7000 08:16 5378586                    /home/kanon/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.1/jaxb-runtime-2.3.1.jar
+7ff7906d0000-7ff7906d2000 r--s 0000c000 08:16 5378590                    /home/kanon/.m2/repository/javax/activation/javax.activation-api/1.2.0/javax.activation-api-1.2.0.jar
+7ff7906d2000-7ff79071f000 r--s 00323000 08:16 4856773                    /home/kanon/.m2/repository/net/bytebuddy/byte-buddy/1.11.8/byte-buddy-1.11.8.jar
+7ff79071f000-7ff790721000 r--s 0000d000 08:16 5378570                    /home/kanon/.m2/repository/org/jboss/logging/jboss-logging/3.4.2.Final/jboss-logging-3.4.2.Final.jar
+7ff790721000-7ff790725000 r--s 0001c000 08:16 5378572                    /home/kanon/.m2/repository/javax/xml/bind/jaxb-api/2.3.1/jaxb-api-2.3.1.jar
+7ff790725000-7ff790728000 r--s 00011000 08:16 5378571                    /home/kanon/.m2/repository/org/hibernate/common/hibernate-commons-annotations/5.1.2.Final/hibernate-commons-annotations-5.1.2.Final.jar
+7ff790728000-7ff79072a000 r--s 0000f000 08:16 4334381                    /home/kanon/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar
+7ff79072a000-7ff79072d000 r--s 0002f000 08:16 5378581                    /home/kanon/.m2/repository/org/jboss/jandex/2.2.3.Final/jandex-2.2.3.Final.jar
+7ff79072d000-7ff79072f000 r--s 00005000 08:16 5378573                    /home/kanon/.m2/repository/org/jboss/spec/javax/transaction/jboss-transaction-api_1.2_spec/1.1.1.Final/jboss-transaction-api_1.2_spec-1.1.1.Final.jar
+7ff79072f000-7ff790735000 r--s 00023000 08:16 5378568                    /home/kanon/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar
+7ff790735000-7ff7907d4000 r--s 007d6000 08:16 5378567                    /home/kanon/.m2/repository/org/hibernate/orm/hibernate-core/6.0.0.Alpha9/hibernate-core-6.0.0.Alpha9.jar
+7ff7907d4000-7ff7907d6000 r--s 00009000 08:16 5123199                    /home/kanon/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+7ff7907d6000-7ff7907df000 r--s 00055000 08:16 4067402                    /home/kanon/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar
+7ff7907df000-7ff7907e5000 r--s 00033000 08:16 5123198                    /home/kanon/.m2/repository/org/yaml/snakeyaml/1.6/snakeyaml-1.6.jar
+7ff7907e5000-7ff7907e7000 r--s 0000c000 08:16 4067400                    /home/kanon/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar
+7ff7907e7000-7ff7907ec000 r--s 00040000 08:16 5123195                    /home/kanon/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar
+7ff7907ec000-7ff7907f9000 r--s 000ba000 08:16 4988126                    /home/kanon/.m2/repository/org/testng/testng/6.8/testng-6.8.jar
+7ff7907f9000-7ff7907fe000 r--s 0002c000 08:16 4988124                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-support/4.0.0-beta-4/selenium-support-4.0.0-beta-4.jar
+7ff7907fe000-7ff7907ff000 r--s 00003000 08:16 4988122                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.0.0-beta-4/selenium-safari-driver-4.0.0-beta-4.jar
+7ff7907ff000-7ff790801000 r--s 0000f000 08:16 4067396                    /home/kanon/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar
+7ff790801000-7ff790803000 r--s 00004000 08:16 4067389                    /home/kanon/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar
+7ff790803000-7ff790804000 r--s 00002000 08:16 4856650                    /home/kanon/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+7ff790804000-7ff790806000 r--s 0001a000 08:16 4856655                    /home/kanon/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar
+7ff790806000-7ff790809000 r--s 00024000 08:16 4856638                    /home/kanon/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar
+7ff790809000-7ff79080a000 r--s 00005000 08:16 4856648                    /home/kanon/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar
+7ff79080a000-7ff79080f000 r--s 00019000 08:16 4856656                    /home/kanon/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar
+7ff79080f000-7ff790810000 r--s 00002000 08:16 4723877                    /home/kanon/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar
+7ff790810000-7ff790819000 r--s 00066000 08:16 4723872                    /home/kanon/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar
+7ff790819000-7ff79081b000 r--s 0000c000 08:16 4067368                    /home/kanon/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar
+7ff79081b000-7ff79081d000 r--s 00005000 08:16 4723883                    /home/kanon/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar
+7ff79081d000-7ff79081f000 r--s 00004000 08:16 4723882                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.2.0-alpha/opentelemetry-semconv-1.2.0-alpha.jar
+7ff79081f000-7ff790820000 r--s 00000000 08:16 4723876                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.2.0/opentelemetry-sdk-1.2.0.jar
+7ff790820000-7ff790824000 r--s 0000c000 08:16 4723880                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-api-metrics/1.2.0-alpha/opentelemetry-api-metrics-1.2.0-alpha.jar
+7ff790824000-7ff790828000 r--s 00016000 08:16 4723870                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.2.0/opentelemetry-sdk-trace-1.2.0.jar
+7ff790828000-7ff79082a000 r--s 00005000 08:16 4723881                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.2.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.2.0-alpha.jar
+7ff79082a000-7ff79082b000 r--s 00005000 08:16 4723875                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.2.0/opentelemetry-sdk-common-1.2.0.jar
+7ff79082b000-7ff790831000 r--s 00025000 08:16 4723884                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.2.0-alpha/opentelemetry-sdk-metrics-1.2.0-alpha.jar
+7ff790831000-7ff790833000 r--s 00000000 08:16 4723869                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.2.0/opentelemetry-exporter-logging-1.2.0.jar
+7ff790833000-7ff790835000 r--s 00009000 08:16 4723866                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-context/1.2.0/opentelemetry-context-1.2.0.jar
+7ff790835000-7ff790838000 r--s 00010000 08:16 4594839                    /home/kanon/.m2/repository/io/opentelemetry/opentelemetry-api/1.2.0/opentelemetry-api-1.2.0.jar
+7ff790838000-7ff79083a000 r--s 00007000 08:16 4594840                    /home/kanon/.m2/repository/io/netty/netty-resolver/4.1.63.Final/netty-resolver-4.1.63.Final.jar
+7ff79083a000-7ff790844000 r--s 0006b000 08:16 4594848                    /home/kanon/.m2/repository/io/netty/netty-transport/4.1.63.Final/netty-transport-4.1.63.Final.jar
+7ff790844000-7ff790845000 r--s 00008000 08:16 4594841                    /home/kanon/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.63.Final/netty-transport-native-unix-common-4.1.63.Final.jar
+7ff790845000-7ff790848000 r--s 00015000 08:16 4594827                    /home/kanon/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.63.Final/netty-transport-native-kqueue-4.1.63.Final.jar
+7ff790848000-7ff79084b000 r--s 0001d000 08:16 4594837                    /home/kanon/.m2/repository/io/netty/netty-transport-native-epoll/4.1.63.Final/netty-transport-native-epoll-4.1.63.Final.jar
+7ff79084b000-7ff790859000 r--s 00091000 08:16 4594850                    /home/kanon/.m2/repository/io/netty/netty-common/4.1.63.Final/netty-common-4.1.63.Final.jar
+7ff790859000-7ff790862000 r--s 00070000 08:16 4594828                    /home/kanon/.m2/repository/io/netty/netty-handler/4.1.63.Final/netty-handler-4.1.63.Final.jar
+7ff790862000-7ff790868000 r--s 00049000 08:16 4594849                    /home/kanon/.m2/repository/io/netty/netty-codec/4.1.63.Final/netty-codec-4.1.63.Final.jar
+7ff790868000-7ff790873000 r--s 0008e000 08:16 4594836                    /home/kanon/.m2/repository/io/netty/netty-codec-http/4.1.63.Final/netty-codec-http-4.1.63.Final.jar
+7ff790873000-7ff790877000 r--s 00046000 08:16 4594842                    /home/kanon/.m2/repository/io/netty/netty-buffer/4.1.63.Final/netty-buffer-4.1.63.Final.jar
+7ff790877000-7ff79087d000 r--s 00058000 08:16 4594856                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.0.0-beta-4/selenium-remote-driver-4.0.0-beta-4.jar
+7ff79087d000-7ff79087e000 r--s 00002000 08:16 4988120                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/4.0.0-beta-4/selenium-opera-driver-4.0.0-beta-4.jar
+7ff79087e000-7ff790880000 r--s 00003000 08:16 4988115                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.0.0-beta-4/selenium-ie-driver-4.0.0-beta-4.jar
+7ff790880000-7ff790882000 r--s 000b7000 08:16 4988116                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-firefox-xpi-driver/4.0.0-beta-4/selenium-firefox-xpi-driver-4.0.0-beta-4.jar
+7ff790882000-7ff790884000 r--s 00010000 08:16 4988119                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.0.0-beta-4/selenium-firefox-driver-4.0.0-beta-4.jar
+7ff790884000-7ff790886000 r--s 00001000 08:16 4988112                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.0.0-beta-4/selenium-edge-driver-4.0.0-beta-4.jar
+7ff790886000-7ff7908a1000 r--s 00120000 08:16 4988110                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v91/4.0.0-beta-4/selenium-devtools-v91-4.0.0-beta-4.jar
+7ff7908a1000-7ff7908bc000 r--s 0011b000 08:16 4988108                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v90/4.0.0-beta-4/selenium-devtools-v90-4.0.0-beta-4.jar
+7ff7908bc000-7ff7908d7000 r--s 00115000 08:16 4856641                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v89/4.0.0-beta-4/selenium-devtools-v89-4.0.0-beta-4.jar
+7ff7908d7000-7ff7908f2000 r--s 0010d000 08:16 4856632                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v88/4.0.0-beta-4/selenium-devtools-v88-4.0.0-beta-4.jar
+7ff7908f2000-7ff79090b000 r--s 000fc000 08:16 4856639                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.0.0-beta-4/selenium-devtools-v85-4.0.0-beta-4.jar
+7ff79090b000-7ff79090d000 r--s 0000f000 08:16 4594823                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-json/4.0.0-beta-4/selenium-json-4.0.0-beta-4.jar
+7ff79090d000-7ff790919000 r--s 0002d000 08:16 4594819                    /home/kanon/.m2/repository/org/checkerframework/checker-qual/3.8.0/checker-qual-3.8.0.jar
+7ff790919000-7ff79094d000 r--s 0028a000 08:16 4067392                    /home/kanon/.m2/repository/com/google/guava/guava/30.1.1-jre/guava-30.1.1-jre.jar
+7ff79094d000-7ff790960000 r--s 0034b000 08:16 5374426                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/resources.jar
+7ff790960000-7ff790961000 ---p 00000000 00:00 0 
+7ff790961000-7ff790a61000 rw-p 00000000 00:00 0 
+7ff790a61000-7ff790a64000 ---p 00000000 00:00 0 
+7ff790a64000-7ff790b62000 rw-p 00000000 00:00 0 
+7ff790b62000-7ff790b63000 ---p 00000000 00:00 0 
+7ff790b63000-7ff790b66000 ---p 00000000 00:00 0 
+7ff790b66000-7ff790c63000 rw-p 00000000 00:00 0 
+7ff790c63000-7ff790c64000 ---p 00000000 00:00 0 
+7ff790c64000-7ff790c67000 ---p 00000000 00:00 0 
+7ff790c67000-7ff790d64000 rw-p 00000000 00:00 0 
+7ff790d64000-7ff790d65000 ---p 00000000 00:00 0 
+7ff790d65000-7ff790d68000 ---p 00000000 00:00 0 
+7ff790d68000-7ff790e65000 rw-p 00000000 00:00 0 
+7ff790e65000-7ff790e68000 ---p 00000000 00:00 0 
+7ff790e68000-7ff790f66000 rw-p 00000000 00:00 0 
+7ff790f66000-7ff790f7e000 r-xp 00000000 08:16 5374333                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnet.so
+7ff790f7e000-7ff79117d000 ---p 00018000 08:16 5374333                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnet.so
+7ff79117d000-7ff79117e000 r--p 00017000 08:16 5374333                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnet.so
+7ff79117e000-7ff79117f000 rw-p 00018000 08:16 5374333                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnet.so
+7ff79117f000-7ff791190000 r-xp 00000000 08:16 5374340                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnio.so
+7ff791190000-7ff791390000 ---p 00011000 08:16 5374340                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnio.so
+7ff791390000-7ff791391000 r--p 00011000 08:16 5374340                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnio.so
+7ff791391000-7ff791392000 rw-p 00012000 08:16 5374340                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libnio.so
+7ff791392000-7ff791428000 r--s 007cf000 08:16 5374416                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/jfxrt.jar
+7ff791428000-7ff79142b000 ---p 00000000 00:00 0 
+7ff79142b000-7ff791529000 rw-p 00000000 00:00 0 
+7ff791529000-7ff791aee000 r--p 00000000 08:16 7604386                    /usr/lib/locale/locale-archive
+7ff791aee000-7ff791af1000 ---p 00000000 00:00 0 
+7ff791af1000-7ff791bef000 rw-p 00000000 00:00 0 
+7ff791bef000-7ff791bf2000 ---p 00000000 00:00 0 
+7ff791bf2000-7ff791cf0000 rw-p 00000000 00:00 0 
+7ff791cf0000-7ff791cf1000 ---p 00000000 00:00 0 
+7ff791cf1000-7ff792d4e000 rw-p 00000000 00:00 0 
+7ff792d4e000-7ff792f1f000 r--s 03ca7000 08:16 5374427                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/rt.jar
+7ff792f1f000-7ff794000000 rw-p 00000000 00:00 0 
+7ff794000000-7ff794021000 rw-p 00000000 00:00 0 
+7ff794021000-7ff798000000 ---p 00000000 00:00 0 
+7ff798000000-7ff798021000 rw-p 00000000 00:00 0 
+7ff798021000-7ff79c000000 ---p 00000000 00:00 0 
+7ff79c000000-7ff79c021000 rw-p 00000000 00:00 0 
+7ff79c021000-7ff7a0000000 ---p 00000000 00:00 0 
+7ff7a0000000-7ff7a0002000 r--s 0000c000 08:16 4856636                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-http/4.0.0-beta-4/selenium-http-4.0.0-beta-4.jar
+7ff7a0002000-7ff7a0004000 r--s 0000d000 08:16 4594847                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-devtools/4.0.0-beta-4/selenium-devtools-4.0.0-beta-4.jar
+7ff7a0004000-7ff7a0006000 r--s 00002000 08:16 4594824                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.0.0-beta-4/selenium-chromium-driver-4.0.0-beta-4.jar
+7ff7a0006000-7ff7a0008000 r--s 00001000 08:16 4067374                    /home/kanon/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
+7ff7a0008000-7ff7a000a000 r--s 00002000 08:16 4067381                    /home/kanon/.m2/repository/com/google/errorprone/error_prone_annotations/2.5.1/error_prone_annotations-2.5.1.jar
+7ff7a000a000-7ff7a000c000 r--s 00003000 08:16 4067375                    /home/kanon/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar
+7ff7a000c000-7ff7a000e000 r--s 00000000 08:16 4067372                    /home/kanon/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+7ff7a000e000-7ff7a000f000 ---p 00000000 00:00 0 
+7ff7a000f000-7ff7a010f000 rw-p 00000000 00:00 0 
+7ff7a010f000-7ff7a0110000 ---p 00000000 00:00 0 
+7ff7a0110000-7ff7a0210000 rw-p 00000000 00:00 0 
+7ff7a0210000-7ff7a0211000 ---p 00000000 00:00 0 
+7ff7a0211000-7ff7a0351000 rw-p 00000000 00:00 0 
+7ff7a0351000-7ff7a083d000 ---p 00000000 00:00 0 
+7ff7a083d000-7ff7a087d000 rw-p 00000000 00:00 0 
+7ff7a087d000-7ff7a0d69000 ---p 00000000 00:00 0 
+7ff7a0d69000-7ff7a0dfa000 rw-p 00000000 00:00 0 
+7ff7a0dfa000-7ff7a0fff000 ---p 00000000 00:00 0 
+7ff7a0fff000-7ff7a1000000 rw-p 00000000 00:00 0 
+7ff7a1000000-7ff7a1660000 rwxp 00000000 00:00 0 
+7ff7a1660000-7ff7b0000000 ---p 00000000 00:00 0 
+7ff7b0000000-7ff7b1e1d000 rw-p 00000000 00:00 0 
+7ff7b1e1d000-7ff7b4000000 ---p 00000000 00:00 0 
+7ff7b4000000-7ff7b4001000 r--s 00000000 08:16 4067377                    /home/kanon/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+7ff7b4001000-7ff7b4004000 r--s 00016000 08:16 4067376                    /home/kanon/.m2/repository/com/google/auto/auto-common/1.0/auto-common-1.0.jar
+7ff7b4004000-7ff7b4006000 r--s 00002000 08:16 4067394                    /home/kanon/.m2/repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar
+7ff7b4006000-7ff7b4007000 r--s 00000000 08:16 4067371                    /home/kanon/.m2/repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar
+7ff7b4007000-7ff7b4008000 r--s 00002000 08:16 4464054                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0-beta-4/selenium-chrome-driver-4.0.0-beta-4.jar
+7ff7b4008000-7ff7b400f000 r--s 00035000 08:16 4464058                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-api/4.0.0-beta-4/selenium-api-4.0.0-beta-4.jar
+7ff7b400f000-7ff7b4010000 r--s 00000000 08:16 4464056                    /home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-java/4.0.0-beta-4/selenium-java-4.0.0-beta-4.jar
+7ff7b4010000-7ff7b4021000 r--s 001c4000 08:16 5374423                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jsse.jar
+7ff7b4021000-7ff7b4022000 ---p 00000000 00:00 0 
+7ff7b4022000-7ff7b413c000 rw-p 00000000 00:00 0 
+7ff7b413c000-7ff7b44e2000 ---p 00000000 00:00 0 
+7ff7b44e2000-7ff7b44fd000 r-xp 00000000 08:16 5374328                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libzip.so
+7ff7b44fd000-7ff7b46fc000 ---p 0001b000 08:16 5374328                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libzip.so
+7ff7b46fc000-7ff7b46fd000 r--p 0001a000 08:16 5374328                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libzip.so
+7ff7b46fd000-7ff7b46fe000 rw-p 0001b000 08:16 5374328                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libzip.so
+7ff7b46fe000-7ff7b4701000 r--p 00000000 08:16 917876                     /lib/x86_64-linux-gnu/libnss_files-2.31.so
+7ff7b4701000-7ff7b4708000 r-xp 00003000 08:16 917876                     /lib/x86_64-linux-gnu/libnss_files-2.31.so
+7ff7b4708000-7ff7b470a000 r--p 0000a000 08:16 917876                     /lib/x86_64-linux-gnu/libnss_files-2.31.so
+7ff7b470a000-7ff7b470b000 r--p 0000b000 08:16 917876                     /lib/x86_64-linux-gnu/libnss_files-2.31.so
+7ff7b470b000-7ff7b470c000 rw-p 0000c000 08:16 917876                     /lib/x86_64-linux-gnu/libnss_files-2.31.so
+7ff7b470c000-7ff7b4712000 rw-p 00000000 00:00 0 
+7ff7b4712000-7ff7b4717000 r--p 00000000 08:16 917873                     /lib/x86_64-linux-gnu/libnsl-2.31.so
+7ff7b4717000-7ff7b4727000 r-xp 00005000 08:16 917873                     /lib/x86_64-linux-gnu/libnsl-2.31.so
+7ff7b4727000-7ff7b472b000 r--p 00015000 08:16 917873                     /lib/x86_64-linux-gnu/libnsl-2.31.so
+7ff7b472b000-7ff7b472c000 r--p 00018000 08:16 917873                     /lib/x86_64-linux-gnu/libnsl-2.31.so
+7ff7b472c000-7ff7b472d000 rw-p 00019000 08:16 917873                     /lib/x86_64-linux-gnu/libnsl-2.31.so
+7ff7b472d000-7ff7b472f000 rw-p 00000000 00:00 0 
+7ff7b472f000-7ff7b4732000 r--p 00000000 08:16 917878                     /lib/x86_64-linux-gnu/libnss_nis-2.31.so
+7ff7b4732000-7ff7b473a000 r-xp 00003000 08:16 917878                     /lib/x86_64-linux-gnu/libnss_nis-2.31.so
+7ff7b473a000-7ff7b473c000 r--p 0000b000 08:16 917878                     /lib/x86_64-linux-gnu/libnss_nis-2.31.so
+7ff7b473c000-7ff7b473d000 r--p 0000c000 08:16 917878                     /lib/x86_64-linux-gnu/libnss_nis-2.31.so
+7ff7b473d000-7ff7b473e000 rw-p 0000d000 08:16 917878                     /lib/x86_64-linux-gnu/libnss_nis-2.31.so
+7ff7b473e000-7ff7b473f000 r--s 00000000 08:16 5374421                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/management-agent.jar
+7ff7b473f000-7ff7b4741000 r--s 00007000 08:16 5374430                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jfxswt.jar
+7ff7b4741000-7ff7b4743000 r--s 00016000 08:16 5374420                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jce.jar
+7ff7b4743000-7ff7b4748000 r--s 002f9000 08:16 5374425                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/charsets.jar
+7ff7b4748000-7ff7b474a000 r--s 00022000 07:0b 1549                       /snap/intellij-idea-community/320/plugins/junit/lib/junit-rt.jar
+7ff7b474a000-7ff7b474b000 r--s 0000a000 07:0b 1550                       /snap/intellij-idea-community/320/plugins/junit/lib/junit5-rt.jar
+7ff7b474b000-7ff7b4751000 r--s 000d3000 08:16 5374424                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jfr.jar
+7ff7b4751000-7ff7b4753000 r--s 0001d000 07:0b 629                        /snap/intellij-idea-community/320/lib/idea_rt.jar
+7ff7b4753000-7ff7b475d000 r-xp 00000000 08:16 5374332                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libinstrument.so
+7ff7b475d000-7ff7b495c000 ---p 0000a000 08:16 5374332                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libinstrument.so
+7ff7b495c000-7ff7b495d000 r--p 00009000 08:16 5374332                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libinstrument.so
+7ff7b495d000-7ff7b495e000 rw-p 0000a000 08:16 5374332                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libinstrument.so
+7ff7b495e000-7ff7b4988000 r-xp 00000000 08:16 5374325                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libjava.so
+7ff7b4988000-7ff7b4b87000 ---p 0002a000 08:16 5374325                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libjava.so
+7ff7b4b87000-7ff7b4b88000 r--p 00029000 08:16 5374325                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libjava.so
+7ff7b4b88000-7ff7b4b8a000 rw-p 0002a000 08:16 5374325                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libjava.so
+7ff7b4b8a000-7ff7b4b9b000 r-xp 00000000 08:16 5374317                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libverify.so
+7ff7b4b9b000-7ff7b4d9a000 ---p 00011000 08:16 5374317                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libverify.so
+7ff7b4d9a000-7ff7b4d9c000 r--p 00010000 08:16 5374317                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libverify.so
+7ff7b4d9c000-7ff7b4d9d000 rw-p 00012000 08:16 5374317                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/libverify.so
+7ff7b4d9d000-7ff7b4da0000 r--p 00000000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da0000-7ff7b4da4000 r-xp 00003000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da4000-7ff7b4da5000 r--p 00007000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da5000-7ff7b4da6000 ---p 00008000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da6000-7ff7b4da7000 r--p 00008000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da7000-7ff7b4da8000 rw-p 00009000 08:16 917883                     /lib/x86_64-linux-gnu/librt-2.31.so
+7ff7b4da8000-7ff7b4da9000 ---p 00000000 00:00 0 
+7ff7b4da9000-7ff7b4dac000 ---p 00000000 00:00 0 
+7ff7b4dac000-7ff7b4ea9000 rw-p 00000000 00:00 0 
+7ff7b4ea9000-7ff7b4eb8000 r--p 00000000 08:16 917870                     /lib/x86_64-linux-gnu/libm-2.31.so
+7ff7b4eb8000-7ff7b4f5f000 r-xp 0000f000 08:16 917870                     /lib/x86_64-linux-gnu/libm-2.31.so
+7ff7b4f5f000-7ff7b4ff6000 r--p 000b6000 08:16 917870                     /lib/x86_64-linux-gnu/libm-2.31.so
+7ff7b4ff6000-7ff7b4ff7000 r--p 0014c000 08:16 917870                     /lib/x86_64-linux-gnu/libm-2.31.so
+7ff7b4ff7000-7ff7b4ff8000 rw-p 0014d000 08:16 917870                     /lib/x86_64-linux-gnu/libm-2.31.so
+7ff7b4ff8000-7ff7b5d50000 r-xp 00000000 08:16 5374310                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/server/libjvm.so
+7ff7b5d50000-7ff7b5f50000 ---p 00d58000 08:16 5374310                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/server/libjvm.so
+7ff7b5f50000-7ff7b5fe7000 r--p 00d58000 08:16 5374310                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/server/libjvm.so
+7ff7b5fe7000-7ff7b6010000 rw-p 00def000 08:16 5374310                    /home/kanon/.jdks/corretto-1.8.0_302/jre/lib/amd64/server/libjvm.so
+7ff7b6010000-7ff7b6045000 rw-p 00000000 00:00 0 
+7ff7b6045000-7ff7b606a000 r--p 00000000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b606a000-7ff7b61e2000 r-xp 00025000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b61e2000-7ff7b622c000 r--p 0019d000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b622c000-7ff7b622d000 ---p 001e7000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b622d000-7ff7b6230000 r--p 001e7000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b6230000-7ff7b6233000 rw-p 001ea000 08:16 917868                     /lib/x86_64-linux-gnu/libc-2.31.so
+7ff7b6233000-7ff7b6237000 rw-p 00000000 00:00 0 
+7ff7b6237000-7ff7b6238000 r--p 00000000 08:16 917869                     /lib/x86_64-linux-gnu/libdl-2.31.so
+7ff7b6238000-7ff7b623a000 r-xp 00001000 08:16 917869                     /lib/x86_64-linux-gnu/libdl-2.31.so
+7ff7b623a000-7ff7b623b000 r--p 00003000 08:16 917869                     /lib/x86_64-linux-gnu/libdl-2.31.so
+7ff7b623b000-7ff7b623c000 r--p 00003000 08:16 917869                     /lib/x86_64-linux-gnu/libdl-2.31.so
+7ff7b623c000-7ff7b623d000 rw-p 00004000 08:16 917869                     /lib/x86_64-linux-gnu/libdl-2.31.so
+7ff7b623d000-7ff7b6254000 r-xp 00000000 08:16 5374438                    /home/kanon/.jdks/corretto-1.8.0_302/lib/amd64/jli/libjli.so
+7ff7b6254000-7ff7b6453000 ---p 00017000 08:16 5374438                    /home/kanon/.jdks/corretto-1.8.0_302/lib/amd64/jli/libjli.so
+7ff7b6453000-7ff7b6454000 r--p 00016000 08:16 5374438                    /home/kanon/.jdks/corretto-1.8.0_302/lib/amd64/jli/libjli.so
+7ff7b6454000-7ff7b6455000 rw-p 00017000 08:16 5374438                    /home/kanon/.jdks/corretto-1.8.0_302/lib/amd64/jli/libjli.so
+7ff7b6455000-7ff7b645c000 r--p 00000000 08:16 917881                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7ff7b645c000-7ff7b646d000 r-xp 00007000 08:16 917881                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7ff7b646d000-7ff7b6472000 r--p 00018000 08:16 917881                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7ff7b6472000-7ff7b6473000 r--p 0001c000 08:16 917881                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7ff7b6473000-7ff7b6474000 rw-p 0001d000 08:16 917881                     /lib/x86_64-linux-gnu/libpthread-2.31.so
+7ff7b6474000-7ff7b6478000 rw-p 00000000 00:00 0 
+7ff7b6478000-7ff7b6480000 rw-s 00000000 08:16 8915578                    /tmp/hsperfdata_kanon/73127
+7ff7b6480000-7ff7b6482000 r--p 00000000 08:16 917874                     /lib/x86_64-linux-gnu/libnss_compat-2.31.so
+7ff7b6482000-7ff7b6489000 r-xp 00002000 08:16 917874                     /lib/x86_64-linux-gnu/libnss_compat-2.31.so
+7ff7b6489000-7ff7b648a000 r--p 00009000 08:16 917874                     /lib/x86_64-linux-gnu/libnss_compat-2.31.so
+7ff7b648a000-7ff7b648b000 r--p 00009000 08:16 917874                     /lib/x86_64-linux-gnu/libnss_compat-2.31.so
+7ff7b648b000-7ff7b648c000 rw-p 0000a000 08:16 917874                     /lib/x86_64-linux-gnu/libnss_compat-2.31.so
+7ff7b648c000-7ff7b648f000 rw-p 00000000 00:00 0 
+7ff7b648f000-7ff7b6490000 r--p 00000000 08:16 917864                     /lib/x86_64-linux-gnu/ld-2.31.so
+7ff7b6490000-7ff7b64b3000 r-xp 00001000 08:16 917864                     /lib/x86_64-linux-gnu/ld-2.31.so
+7ff7b64b3000-7ff7b64bb000 r--p 00024000 08:16 917864                     /lib/x86_64-linux-gnu/ld-2.31.so
+7ff7b64bb000-7ff7b64bc000 r--p 00000000 00:00 0 
+7ff7b64bc000-7ff7b64bd000 r--p 0002c000 08:16 917864                     /lib/x86_64-linux-gnu/ld-2.31.so
+7ff7b64bd000-7ff7b64be000 rw-p 0002d000 08:16 917864                     /lib/x86_64-linux-gnu/ld-2.31.so
+7ff7b64be000-7ff7b64bf000 rw-p 00000000 00:00 0 
+7fffcd766000-7fffcd78b000 rw-p 00000000 00:00 0                          [stack]
+7fffcd7ac000-7fffcd7af000 r--p 00000000 00:00 0                          [vvar]
+7fffcd7af000-7fffcd7b0000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+VM Arguments:
+jvm_args: -ea -Didea.test.cyclic.buffer.size=1048576 -javaagent:/snap/intellij-idea-community/320/lib/idea_rt.jar=38583:/snap/intellij-idea-community/320/bin -Dfile.encoding=UTF-8 
+java_command: com.intellij.rt.junit.JUnitStarter -ideVersion5 -junit4 com.ctrend.assignment.test.LoginTest,loginWithId1
+java_class_path (initial): /snap/intellij-idea-community/320/lib/idea_rt.jar:/snap/intellij-idea-community/320/plugins/junit/lib/junit5-rt.jar:/snap/intellij-idea-community/320/plugins/junit/lib/junit-rt.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/charsets.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/cldrdata.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/dnsns.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/jaccess.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/jfxrt.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/localedata.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/nashorn.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/sunec.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/sunjce_provider.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/sunpkcs11.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/ext/zipfs.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jce.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jfr.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jfxswt.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/jsse.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/management-agent.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/resources.jar:/home/kanon/.jdks/corretto-1.8.0_302/jre/lib/rt.jar:/home/kanon/Work_space/Selenium/test/JobAssignment/target/test-classes:/home/kanon/Work_space/Selenium/test/JobAssignment/target/classes:/home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-java/4.0.0-beta-4/selenium-java-4.0.0-beta-4.jar:/home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-api/4.0.0-beta-4/selenium-api-4.0.0-beta-4.jar:/home/kanon/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.0.0-beta-4/selenium-chrome-driver-4.0.0-beta-4.jar:/home/kanon/.m2/repository/com/google/auto/service/auto-service-annotations/1.0/auto-service-annotations-1.0.jar:/home/kanon/.m2/repository/com/google/auto/service/auto-service/1.0/auto-service-1.0.jar:/home/kanon/.m2/repository/com/google/aut
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/home/kanon/bin:/home/kanon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+USERNAME=kanon
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xb32220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xb32220], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0x959c30], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0x959c30], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0x959c30], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0x959c30], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.so+0x959b00], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.so+0x95a120], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.so+0x95a120], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.so+0x95a120], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.so+0x95a120], sa_mask[0]=11111111011111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.3 LTS"
+
+uname:Linux 5.4.0-81-generic #91-Ubuntu SMP Thu Jul 15 19:09:17 UTC 2021 x86_64
+libc:glibc 2.31 NPTL 2.31 
+rlimit: STACK 8192k, CORE 0k, NPROC 63299, NOFILE 1048576, AS infinity
+load average:1.16 1.08 0.92
+
+/proc/meminfo:
+MemTotal:       16263564 kB
+MemFree:         3850168 kB
+MemAvailable:    8916440 kB
+Buffers:          606564 kB
+Cached:          5121616 kB
+SwapCached:            0 kB
+Active:          7530464 kB
+Inactive:        3731760 kB
+Active(anon):    6006808 kB
+Inactive(anon):   176396 kB
+Active(file):    1523656 kB
+Inactive(file):  3555364 kB
+Unevictable:      461668 kB
+Mlocked:              48 kB
+SwapTotal:      63998968 kB
+SwapFree:       63998968 kB
+Dirty:             18248 kB
+Writeback:             0 kB
+AnonPages:       5995788 kB
+Mapped:          1280972 kB
+Shmem:            649164 kB
+KReclaimable:     328496 kB
+Slab:             496316 kB
+SReclaimable:     328496 kB
+SUnreclaim:       167820 kB
+KernelStack:       25520 kB
+PageTables:        69528 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    72130748 kB
+Committed_AS:   21776252 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       57396 kB
+VmallocChunk:          0 kB
+Percpu:             3200 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      463476 kB
+DirectMap2M:    14082048 kB
+DirectMap1G:     2097152 kB
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0-3
+cpu_memory_nodes: 0
+active_processor_count: 4
+cpu_quota: -1
+cpu_period: 100000
+cpu_shares: -1
+memory_limit_in_bytes: -1
+memory_and_swap_limit_in_bytes: -2
+memory_soft_limit_in_bytes: -1
+memory_usage_in_bytes: 10612744192
+memory_max_usage_in_bytes: 11416272896
+
+
+CPU:total 4 (initial active 4) (2 cores per cpu, 2 threads per core) family 6 model 142 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xea
+cpu MHz		: 3099.999
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xea
+cpu MHz		: 3100.115
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xea
+cpu MHz		: 3100.026
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 142
+model name	: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
+stepping	: 9
+microcode	: 0xea
+cpu MHz		: 3100.028
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 22
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d
+bugs		: cpu_meltdown spectre_v1 spectre_v2 spec_store_bypass l1tf mds swapgs itlb_multihit srbds
+bogomips	: 5399.81
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 39 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 16263564k(3850056k free), swap 63998968k(63998968k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.302-b08) for linux-amd64 JRE (1.8.0_302-b08), built on Jul 15 2021 19:28:11 by "jenkins" with gcc 7.3.1 20180303 (Red Hat 7.3.1-5)
+
+time: Mon Sep  6 16:45:28 2021
+timezone: +06
+elapsed time: 4.177192 seconds (0d 0h 0m 4s)
+

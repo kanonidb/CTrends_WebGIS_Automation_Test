@@ -1,0 +1,200 @@
+2021-09-13 15:01:09,974 - test selenium -INFO - page is loading kanon
+2021-09-13 15:01:10,050 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-13 15:01:10,290 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-13 15:01:10,572 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-13 15:01:10,803 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-13 15:01:10,812 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-13 15:01:10,812 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-13 15:01:10,813 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-13 15:01:10,814 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-13 15:01:10,818 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-13 15:01:11,068 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-13 15:01:12,013 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b4825f0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-13 15:01:12,286 - test selenium -INFO - user name is submit
+2021-09-13 15:01:14,359 - test selenium -INFO - password is submit
+2021-09-13 15:01:15,039 - test selenium -INFO - user name is submit
+2021-09-13 15:01:17,093 - test selenium -INFO - password is submit
+2021-09-13 15:01:17,894 - test selenium -INFO - user name is submit
+2021-09-13 15:01:19,968 - test selenium -INFO - password is submit
+2021-09-13 15:01:20,727 - test selenium -INFO - user name is submit
+2021-09-13 15:01:22,801 - test selenium -INFO - password is submit
+2021-09-13 15:02:53,019 - test selenium -INFO - page is loading kanon
+2021-09-13 15:02:53,101 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-13 15:02:53,317 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-13 15:02:53,645 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-13 15:02:53,843 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-13 15:02:53,851 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-13 15:02:53,852 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-13 15:02:53,853 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-13 15:02:53,854 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-13 15:02:53,858 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-13 15:02:54,051 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-13 15:02:54,992 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40ac6b76] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-13 15:02:55,223 - test selenium -INFO - user name is submit
+2021-09-13 15:02:57,276 - test selenium -INFO - password is submit
+2021-09-13 15:02:57,946 - test selenium -INFO - user name is submit
+2021-09-13 15:03:00,002 - test selenium -INFO - password is submit
+2021-09-13 15:03:00,578 - test selenium -INFO - user name is submit
+2021-09-13 15:03:02,663 - test selenium -INFO - password is submit
+2021-09-13 15:03:03,268 - test selenium -INFO - user name is submit
+2021-09-13 15:03:05,335 - test selenium -INFO - password is submit
+2021-09-13 15:03:09,379 - test selenium -INFO - page is loading kanon
+2021-09-13 15:03:54,365 - test selenium -INFO - page is loading kanon
+2021-09-13 15:03:54,446 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-13 15:03:54,657 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-13 15:03:55,000 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-13 15:03:55,226 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-13 15:03:55,233 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-13 15:03:55,234 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-13 15:03:55,235 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-13 15:03:55,235 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-13 15:03:55,238 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-13 15:03:55,445 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-13 15:03:56,354 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@40ac6b76] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-13 15:03:56,606 - test selenium -INFO - user name is submit
+2021-09-13 15:03:58,679 - test selenium -INFO - password is submit
+2021-09-13 15:03:59,480 - test selenium -INFO - user name is submit
+2021-09-13 15:04:01,565 - test selenium -INFO - password is submit
+2021-09-13 15:04:02,278 - test selenium -INFO - user name is submit
+2021-09-13 15:04:04,359 - test selenium -INFO - password is submit
+2021-09-13 15:04:04,957 - test selenium -INFO - user name is submit
+2021-09-13 15:04:07,014 - test selenium -INFO - password is submit
+2021-09-13 15:04:11,081 - test selenium -INFO - page is loading kanon
+2021-09-13 15:06:11,502 - test selenium -INFO - page is loading kanon
+2021-09-13 15:06:11,643 - test selenium -INFO - user name is submit
+2021-09-13 15:06:13,708 - test selenium -INFO - password is submit
+2021-09-13 15:06:14,571 - test selenium -INFO - user name is submit
+2021-09-13 15:06:16,635 - test selenium -INFO - password is submit
+2021-09-13 15:06:17,223 - test selenium -INFO - user name is submit
+2021-09-13 15:06:19,305 - test selenium -INFO - password is submit
+2021-09-13 15:06:20,040 - test selenium -INFO - user name is submit
+2021-09-13 15:06:22,100 - test selenium -INFO - password is submit
+2021-09-13 15:09:55,645 - test selenium -INFO - page is loading kanon
+2021-09-13 15:09:55,707 - test selenium -INFO - user name is submit
+2021-09-13 15:09:57,789 - test selenium -INFO - password is submit
+2021-09-13 15:09:58,463 - test selenium -INFO - user name is submit
+2021-09-13 15:10:00,521 - test selenium -INFO - password is submit
+2021-09-13 15:10:01,111 - test selenium -INFO - user name is submit
+2021-09-13 15:10:03,163 - test selenium -INFO - password is submit
+2021-09-13 15:10:03,750 - test selenium -INFO - user name is submit
+2021-09-13 15:10:05,852 - test selenium -INFO - password is submit
+2021-09-13 15:11:36,513 - test selenium -INFO - page is loading kanon
+2021-09-13 15:11:36,588 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-13 15:11:36,832 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-13 15:11:37,115 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-13 15:11:37,305 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-13 15:11:37,313 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-13 15:11:37,314 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-13 15:11:37,314 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-13 15:11:37,315 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-13 15:11:37,318 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-13 15:11:37,545 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-13 15:11:38,476 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@4887de2b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-13 15:11:38,731 - test selenium -INFO - user name is submit
+2021-09-13 15:11:40,812 - test selenium -INFO - password is submit
+2021-09-13 15:11:41,572 - test selenium -INFO - user name is submit
+2021-09-13 15:11:43,632 - test selenium -INFO - password is submit
+2021-09-13 15:11:44,398 - test selenium -INFO - user name is submit
+2021-09-13 15:11:46,483 - test selenium -INFO - password is submit
+2021-09-13 15:11:47,118 - test selenium -INFO - user name is submit
+2021-09-13 15:11:49,178 - test selenium -INFO - password is submit
+2021-09-14 15:07:51,212 - test selenium -INFO - page is loading kanon
+2021-09-14 15:07:51,321 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-14 15:07:51,601 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-14 15:07:51,948 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-14 15:07:52,140 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-14 15:07:52,147 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-14 15:07:52,148 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-14 15:07:52,149 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-14 15:07:52,149 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-14 15:07:52,153 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-14 15:07:52,275 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-14 15:07:53,390 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@717d7587] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-14 15:07:53,619 - test selenium -INFO - user name is submit
+2021-09-14 15:07:55,717 - test selenium -INFO - password is submit
+2021-09-14 15:07:56,790 - test selenium -INFO - user name is submit
+2021-09-14 15:07:58,850 - test selenium -INFO - password is submit
+2021-09-14 15:07:59,532 - test selenium -INFO - user name is submit
+2021-09-14 15:08:01,625 - test selenium -INFO - password is submit
+2021-09-14 15:08:02,348 - test selenium -INFO - user name is submit
+2021-09-14 15:08:04,453 - test selenium -INFO - password is submit
+2021-09-14 15:09:24,353 - test selenium -INFO - page is loading kanon
+2021-09-14 15:09:24,436 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-14 15:09:24,627 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-14 15:09:24,886 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-14 15:09:25,067 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-14 15:09:25,074 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-14 15:09:25,075 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-14 15:09:25,076 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-14 15:09:25,076 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-14 15:09:25,081 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-14 15:09:25,201 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-14 15:09:26,224 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@717d7587] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-14 15:09:26,500 - test selenium -INFO - user name is submit
+2021-09-14 15:09:28,568 - test selenium -INFO - password is submit
+2021-09-14 15:09:29,410 - test selenium -INFO - user name is submit
+2021-09-14 15:09:31,496 - test selenium -INFO - password is submit
+2021-09-14 15:09:32,211 - test selenium -INFO - user name is submit
+2021-09-14 15:09:34,306 - test selenium -INFO - password is submit
+2021-09-14 15:09:35,033 - test selenium -INFO - user name is submit
+2021-09-14 15:09:37,137 - test selenium -INFO - password is submit
+2021-09-14 15:10:59,814 - test selenium -INFO - page is loading kanon
+2021-09-14 15:10:59,906 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-14 15:11:00,102 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-14 15:11:00,365 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-14 15:11:00,553 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-14 15:11:00,563 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-14 15:11:00,563 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-14 15:11:00,564 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-14 15:11:00,564 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-14 15:11:00,568 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-14 15:11:00,676 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-14 15:11:01,672 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@717d7587] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-14 15:11:01,958 - test selenium -INFO - user name is submit
+2021-09-14 15:11:04,035 - test selenium -INFO - password is submit
+2021-09-14 15:11:04,725 - test selenium -INFO - user name is submit
+2021-09-14 15:11:06,819 - test selenium -INFO - password is submit
+2021-09-14 15:11:07,600 - test selenium -INFO - user name is submit
+2021-09-14 15:11:09,694 - test selenium -INFO - password is submit
+2021-09-14 15:11:10,363 - test selenium -INFO - user name is submit
+2021-09-14 15:11:12,472 - test selenium -INFO - password is submit
+2021-09-14 15:13:05,165 - test selenium -INFO - page is loading kanon
+2021-09-14 15:13:05,248 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-14 15:13:05,453 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-14 15:13:05,725 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-14 15:13:05,950 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-14 15:13:05,957 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-14 15:13:05,958 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-14 15:13:05,959 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-14 15:13:05,960 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-14 15:13:05,964 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-14 15:13:06,065 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-14 15:13:07,099 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ce85af2] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-14 15:13:07,327 - test selenium -INFO - user name is submit
+2021-09-14 15:13:09,424 - test selenium -INFO - password is submit
+2021-09-14 15:13:10,179 - test selenium -INFO - user name is submit
+2021-09-14 15:13:12,266 - test selenium -INFO - password is submit
+2021-09-14 15:13:13,021 - test selenium -INFO - user name is submit
+2021-09-14 15:13:15,129 - test selenium -INFO - password is submit
+2021-09-14 15:13:15,813 - test selenium -INFO - user name is submit
+2021-09-14 15:13:17,876 - test selenium -INFO - password is submit
+2021-09-14 15:16:51,380 - test selenium -INFO - page is loading kanon
+2021-09-14 15:16:51,468 - org.hibernate.Version -INFO - HHH000412: Hibernate ORM core version 6.0.0.Alpha9
+2021-09-14 15:16:51,686 - org.hibernate.orm.deprecation -WARN - HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
+2021-09-14 15:16:51,963 - org.hibernate.annotations.common.Version -INFO - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-09-14 15:16:52,159 - org.hibernate.orm.connections.pooling -WARN - HHH10001002: Using built-in connection pool (not intended for production use)
+2021-09-14 15:16:52,167 - org.hibernate.orm.connections.pooling -INFO - HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
+2021-09-14 15:16:52,167 - org.hibernate.orm.connections.pooling -INFO - HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5432/test]
+2021-09-14 15:16:52,168 - org.hibernate.orm.connections.pooling -INFO - HHH10001001: Connection properties: {user=postgres, password=****, pool_size=1}
+2021-09-14 15:16:52,169 - org.hibernate.orm.connections.pooling -INFO - HHH10001003: Autocommit mode: false
+2021-09-14 15:16:52,172 - org.hibernate.orm.connections.pooling -INFO - HHH10001115: Connection pool size: 20 (min=1)
+2021-09-14 15:16:52,272 - SQL dialect -INFO - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2021-09-14 15:16:53,299 - org.hibernate.orm.connections.access -INFO - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@316acbb5] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2021-09-14 15:16:53,514 - test selenium -INFO - user name is submit
+2021-09-14 15:16:55,624 - test selenium -INFO - password is submit
+2021-09-14 15:16:56,300 - test selenium -INFO - user name is submit
+2021-09-14 15:16:58,391 - test selenium -INFO - password is submit
+2021-09-14 15:16:59,141 - test selenium -INFO - user name is submit
+2021-09-14 15:17:01,230 - test selenium -INFO - password is submit
+2021-09-14 15:17:01,899 - test selenium -INFO - user name is submit
+2021-09-14 15:17:03,975 - test selenium -INFO - password is submit
