@@ -52,5 +52,6 @@
 		<mapping class="com.ctrend.assignment.model.AppMaster" />
 		<mapping class="com.ctrend.assignment.model.Suite" />
 		<mapping class="com.ctrend.assignment.model.UiResultTable" />
+		<mapping class="com.ctrend.assignment.model.Login" />
 	</session-factory>
 </hibernate-configuration>

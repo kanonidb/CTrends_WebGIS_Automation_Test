@@ -1,4 +1,5 @@
 package com.ctrend.assignment.test;
+import com.ctrend.assignment.model.Login;
 import com.ctrend.assignment.xPath_Pages.HomePage;
 import com.ctrend.assignment.xPath_Pages.LoginPage;
 import com.ctrend.assignment.xPath_Pages.RoutForm;
@@ -25,7 +26,7 @@ public class LoginTest extends Ui {
         for(int i =1; i<=4; i++) {
             String url = "http://cloud.ctrends-software.com:9009/";
             if(!driver.getCurrentUrl().equals(url)) {
-                BaseEntity user = UserRepository.getInstance().getUser(i);
+                Login user = UserRepository.getInstance().getUser(i);
                 loginPage.usernamePlaceHolderSearch(user.getUserName());
                 logger.info("user name is submit");
                 Thread.sleep(2000);

@@ -16,7 +16,7 @@ public class BaseEntity implements java.io.Serializable  {
 	@Id
 	@GeneratedValue(strategy = IDENTITY)
 	@Column(name = "id")
-	private Long id;
+	private int id;
 
 
 	@Column(name = "userName")
@@ -25,12 +25,11 @@ public class BaseEntity implements java.io.Serializable  {
 	private String password;
 
 
-
-	public Long getId() {
-		return this.id;
+	public int getId() {
+		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 

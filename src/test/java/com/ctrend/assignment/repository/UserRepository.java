@@ -2,6 +2,7 @@ package com.ctrend.assignment.repository;
 
 import com.ctrend.assignment.hi_cofig.HibernateUtil;
 import com.ctrend.assignment.model.BaseEntity;
+import com.ctrend.assignment.model.Login;
 import org.hibernate.*;
 import org.hibernate.query.Query;
 
@@ -21,14 +22,14 @@ public class UserRepository {
     }
 
 //    GET USER ID PASSWORD
-    public BaseEntity getUser(int i) {
+    public Login getUser(int i) {
 
       Transaction tx = null;
-        BaseEntity user = null;
+        Login user = null;
       try {
           Session session = HibernateUtil.getSessionFactory().getCurrentSession();
           tx = session.beginTransaction();
-          user  = (BaseEntity)session.get(BaseEntity.class, i);
+          user  = (Login)session.get(Login.class, i);
 
           session.getTransaction().commit();
       } catch (Exception e) {
@@ -43,31 +44,6 @@ public class UserRepository {
   }
 
 
-    public List<BaseEntity> getEmps() {
 
-
-        Transaction tx = null;
-
-        List<BaseEntity> empList = null;
-
-        try {
-            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-            tx = session.beginTransaction();
-//            Criteria cr = session.createCriteria(BaseEntity.class);
-
-         Query q = session.createQuery("SELECT * FROM baseentity");
-            empList = q.list();
-
-        } catch (Exception e) {
-            System.out.println("########" + e);
-            e.printStackTrace();
-            try {
-                tx.rollback();
-            } catch (Exception ex) {
-            }
-        }
-        System.out.println(empList);
-        return empList;
-    }
     
 }

@@ -27,9 +27,9 @@ public class D_AD_area_on_map_repository {
         query.select(root);
         Query q = session.createQuery("FROM Ui_define_administrative_area_on_map");
         List<Ui_define_administrative_area_on_map> appmasters =q.getResultList();
-        for (Ui_define_administrative_area_on_map appmaster : appmasters) {
-            System.out.println(appmaster.getSeq());
-        }
+//        for (Ui_define_administrative_area_on_map appmaster : appmasters) {
+//            System.out.println(appmaster.getSeq());
+//        }
        transaction.commit();
         return appmasters;
     }
