@@ -2,10 +2,12 @@ package com.ctrend.assignment.repository;
 
 
 import com.ctrend.assignment.hi_cofig.HibernateUtil;
+import com.ctrend.assignment.model.UiResultTable;
 import com.ctrend.assignment.model.Ui_define_administrative_area_on_map;
+
+import javax.persistence.Query;
 import javax.persistence.criteria.*;
 import org.hibernate.*;
-import org.hibernate.query.Query;
 
 import java.util.List;
 
@@ -24,19 +26,46 @@ public class D_AD_area_on_map_repository {
 
         Session session = HibernateUtil.getSessionFactory().getCurrentSession();
         Transaction transaction = session.beginTransaction();
-
+//
 //        CriteriaBuilder builder = session.getCriteriaBuilder();
 //        CriteriaQuery<Ui_define_administrative_area_on_map> query = builder.createQuery(Ui_define_administrative_area_on_map.class);
 //        Root<Ui_define_administrative_area_on_map> root = query.from(Ui_define_administrative_area_on_map.class);
 //        query.select(root);
-        Query q = session.createQuery("FROM Ui_define_administrative_area_on_map");
-        List<Ui_define_administrative_area_on_map> appmasters =q.list();
+        Criteria crit = session.createCriteria(Ui_define_administrative_area_on_map.class);
+
+//        Query q = session.createQuery("FROM Ui_define_administrative_area_on_map");
+//        Query<Ui_define_administrative_area_on_map> q = session.createQuery(query);
+        List<Ui_define_administrative_area_on_map> appmasters =crit.list();
         for (Ui_define_administrative_area_on_map appmaster : appmasters) {
             System.out.println(appmaster.getSeq());
         }
        transaction.commit();
         return appmasters;
     }
+
+
+
+//    public List<Ui_define_administrative_area_on_map> getTestResultList() {
+//        Transaction tx = null;
+//
+//        List<Ui_define_administrative_area_on_map> testResults = null;
+//
+//        try {
+//            Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+//            tx = session.beginTransaction();
+//            javax.persistence.Query q = (Query) session.createQuery("FORM Ui_define_administrative_area_on_map");
+//            testResults = q.getResultList();
+//            session.getTransaction().commit();
+//        } catch (Exception e) {
+//            System.out.println("########" + e);
+//            e.printStackTrace();
+//            try {
+//                tx.rollback();
+//            } catch (Exception ex) {
+//            }
+//        }
+//        return testResults;
+//    }
 
 
 //   public List<Ui_define_administrative_area_on_map> getList() {
