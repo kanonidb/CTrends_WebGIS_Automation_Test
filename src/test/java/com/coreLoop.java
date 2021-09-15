@@ -1,6 +1,10 @@
 package com;
 
+import com.ctrend.assignment.model.Ui_define_administrative_area_on_map;
+import com.ctrend.assignment.repository.D_AD_area_on_map_repository;
+
 import java.util.ArrayList;
+import java.util.List;
 
 public class coreLoop {
 
@@ -50,5 +54,11 @@ public class coreLoop {
         }
         System.out.println(kk );
 
+        D_AD_area_on_map_repository dsgg = D_AD_area_on_map_repository.getInstance();
+        List<Ui_define_administrative_area_on_map> list =   dsgg.findAll();
+    for (Ui_define_administrative_area_on_map kkk : list){
+
+        System.out.println(kkk.getSeq());
+    }
     }
 }

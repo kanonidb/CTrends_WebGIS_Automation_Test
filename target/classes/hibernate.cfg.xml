@@ -45,5 +45,12 @@
 		<mapping class="com.ctrend.assignment.model.BaseEntity" />
 		<mapping class="com.ctrend.assignment.model.UserForm" />
 		<mapping class="com.ctrend.assignment.model.UserData" />
+		<mapping class="com.ctrend.assignment.model.Ui_define_administrative_area_on_map" />
+		<mapping class="com.ctrend.assignment.model.UiTable" />
+		<mapping class="com.ctrend.assignment.model.UiGroup" />
+		<mapping class="com.ctrend.assignment.model.OperatorGroup" />
+		<mapping class="com.ctrend.assignment.model.AppMaster" />
+		<mapping class="com.ctrend.assignment.model.Suite" />
+		<mapping class="com.ctrend.assignment.model.UiResultTable" />
 	</session-factory>
 </hibernate-configuration>
